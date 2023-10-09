@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        quicksand: ["Quicksand", "sans-serif"],
+      },
       colors: {
         yellowgreen: {
           DEFAULT: "#D2DE32",
