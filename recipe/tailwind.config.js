@@ -12,6 +12,14 @@ module.exports = {
         quicksand: ["Quicksand", "sans-serif"],
       },
       colors: {
+        dark: {
+          DEFAULT: "#212427",
+          300: "#464D53",
+          400: "#34383D",
+          500: "#212427",
+          600: "#070809",
+          700: "#000000",
+        },
         yellowgreen: {
           DEFAULT: "#D2DE32",
           300: "#E1E978",
