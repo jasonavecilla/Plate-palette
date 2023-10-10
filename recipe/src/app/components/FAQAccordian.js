@@ -1,6 +1,8 @@
 import React from 'react'
 import FAQItem from './FAQItem'
 
+// credit to https://preline.co/examples/faq-sections.html 
+
 const faqData = [
     {
         question: 'How do I search for recipes?',
@@ -36,9 +38,7 @@ export default function FAQ() {
 
             {/* <!-- Accordion --> */}
             <div className="hs-accordion-group">
-
-            {faqElements}
-
+                {faqElements}
             </div>
             {/* <!-- End Accordion --> */}
 
