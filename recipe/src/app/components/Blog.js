@@ -43,7 +43,7 @@ function Blog() {
   const blogElements = blogData.map(blog => <Card key={blog.title} blog={blog}/>)
 
   return (
-    <div>
+    <>
       {/* <!-- Card Blog --> */}
       <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
 
@@ -56,14 +56,12 @@ function Blog() {
         
         {/* <!-- Grid --> */}
         <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-        
           {blogElements}
-          
         </div>
         {/* <!-- End Grid --> */}
       </div>
       {/* <!-- End Card Blog --> */}
-    </div>
+    </>
   )
 }
 

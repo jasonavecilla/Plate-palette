@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Card({blog}) {
     return (
-        <>
+      <>
     
         {/* <!-- Card --> */}
         <a class="group sm:relative sm:block" href="#">
@@ -47,6 +47,6 @@ export default function Card({blog}) {
         </a>
         {/* <!-- End Card --> */}
     
-        </>
+      </>
     )
 }
