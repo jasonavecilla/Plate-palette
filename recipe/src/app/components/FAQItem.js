@@ -4,7 +4,7 @@ export default function FAQ({faq}) {
 
   return (
     <>
-        <div className="hs-accordion hs-accordion-active:bg-peach-500 rounded-xl p-6 active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
+        <div className="hs-accordion hs-accordion-active:bg-peach-600 rounded-xl p-6 active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
             <button className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left text-blue-700 transition hover:text-blue-500" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
                 {faq.question}
             <svg className="hs-accordion-active:hidden block w-3 h-3 text-blue-600 group-hover:text-blue-500" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
