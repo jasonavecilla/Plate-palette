@@ -3,3 +3,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 0.2px black;
+    }
+    .font-outline-4 {
+      -webkit-text-stroke: 4px black;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #FFFFDD !important;
+}

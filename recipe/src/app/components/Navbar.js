@@ -8,7 +8,7 @@ export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className=" sticky top-0 z-50 w-full bg-pinkSoft  ">
+    <nav className=" sticky top-0 z-50 w-full bg-white  ">
       <div className="justify-between px-4 mx-auto  md:items-center md:flex md:px-8 pb-9 pt-5 ">
         <div>
           <div className="flex items-center justify-between">
