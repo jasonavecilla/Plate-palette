@@ -1,21 +1,18 @@
-'use client'
-import { useEffect } from 'react'
-import Image from "next/image";
+"use client";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SearchFilter from "./components/SearchFilter";
 
 export default function Home() {
-
   useEffect(() => {
-    import('preline')
-  }, [])
-  
+    import("preline");
+  }, []);
+
   return (
     <>
-    <Navbar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        Recipe
-      </main>
+      <Navbar />
+      <SearchFilter />
       <Footer />
     </>
   );

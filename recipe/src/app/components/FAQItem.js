@@ -2,7 +2,7 @@ import React from 'react'
 
 // credit to https://preline.co/examples/faq-sections.html 
 
-export default function FAQ({faq}) {
+export default function FAQItem({faq}) {
 
   return (
     <>
