@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
     .font-outline-2 {
       -webkit-text-stroke: 0.2px black;
@@ -15,4 +16,8 @@
 
   .swiper-pagination-bullet-active {
     background-color: #FFFFDD !important;
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.16);
+
 }
