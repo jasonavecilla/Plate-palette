@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import PlatePalette from "../assets/PlatePalette.svg";
 import { useState } from "react";
 
 export default function NavBar() {
