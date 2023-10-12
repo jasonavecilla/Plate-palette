@@ -41,10 +41,14 @@ const RecipeGrid = () => {
       <div className='grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3'>
         {imageUrls.map((imageUrl, index) => (
           // grid child
-          <div key={index} className='recipe-card flex flex-col'>
+          <div key={index} className='relative flex flex-col'>
             {/* image div */}
             <div className='h-[120px] lg:h-44'>
               <img src={imageUrl} className='rounded-xl h-full w-full object-cover' alt={`Recipe ${index}`} />
+            </div>
+            <div className='img-overlay h-[120px] lg:h-44 w-full absolute top-0 left-0 rounded-xl'></div>
+            <div className='p-3 absolute top-0 right-0'>
+              <i className='fa-solid fa-heart text-white'></i>
             </div>
             <div className=' mt-[10px]'>
               <h3 className='font-medium mb-5'>{titles[index]}</h3>
