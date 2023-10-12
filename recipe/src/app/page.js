@@ -3,6 +3,9 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchFilter from "./components/SearchFilter";
+import Blog from "./components/Blog";
+import FAQAccordian from "./components/FAQAccordian";
+import Newsletter from "./components/Newsletter";
 
 export default function Home() {
   useEffect(() => {
@@ -13,7 +16,9 @@ export default function Home() {
     <>
       <Navbar />
       <SearchFilter />
-      <Footer />
+      <Blog />
+      <Newsletter />
+      <FAQAccordian />
     </>
   );
 }
