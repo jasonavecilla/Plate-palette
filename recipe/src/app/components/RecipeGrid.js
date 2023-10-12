@@ -37,11 +37,14 @@ const RecipeGrid = () => {
 
   return (
     <section className='container mx-auto px-4 max-w-7xl'>
+      {/* parent grid container */}
       <div className='grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3'>
         {imageUrls.map((imageUrl, index) => (
+          // grid child
           <div key={index} className='recipe-card flex flex-col'>
-            <div className='h-[50%] bg-red-500 p-1'>
-              <img src={imageUrl} className='rounded-xl object-cover h-full w-full' alt={`Recipe ${index}`} />
+            {/* image div */}
+            <div className='h-[120px] lg:h-44'>
+              <img src={imageUrl} className='rounded-xl h-full w-full object-cover' alt={`Recipe ${index}`} />
             </div>
             <div className=' mt-[10px]'>
               <h3 className='font-medium mb-5'>{titles[index]}</h3>

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchFilter from "./components/SearchFilter";
+import RecipeGrid from "./components/RecipeGrid";
 
 export default function Home() {
   useEffect(() => {
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <Navbar />
       <SearchFilter />
+      <RecipeGrid />
       <Footer />
     </>
   );
