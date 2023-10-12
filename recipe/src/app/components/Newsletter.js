@@ -2,11 +2,11 @@ export default function Newsletter() {
   return (
     <div className="max-w-full mx-auto py-16 sm:py-24">
       <div className="mx-auto sm:px-6 lg:px-8">
-        <div className=" bg-olive px-6 py-24 sm:px-24 xl:py-32">
-          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl font-quicksand">
+        <div className=" bg-olive-300 px-6 py-24 sm:px-24 xl:py-32">
+          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl">
             Stay Updated with Our Latest Recipe.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-dark-400 font-semibold font-quicksand">
+          <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-dark-400 font-semibold">
             Join our newsletter to stay updated with our latest and most
             delicious recipes, culinary tips, and mouthwatering meal ideas
             delivered straight to your inbox!

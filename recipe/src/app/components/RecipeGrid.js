@@ -44,7 +44,7 @@ const RecipeGrid = () => {
   };
 
   return (
-    <section className='container mx-auto px-4 max-w-7xl'>
+    <section className='container mx-auto px-4 max-w-7xl mt-20'>
       {/* parent grid container */}
       <div className='grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3'>
         {imageUrls.map((imageUrl, index) => (

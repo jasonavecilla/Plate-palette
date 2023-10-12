@@ -22,12 +22,12 @@ export default function Home() {
       <Navbar />
       <SlideShow />
       <SearchFilter />
-
+      <RecipeGrid />
       <Blog />
       <Newsletter />
       <FAQAccordian />
 
-      <RecipeGrid />
+   
       <Footer />
 
     </>
