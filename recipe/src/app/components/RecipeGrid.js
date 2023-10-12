@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const RecipeGrid = () => {
   const imageUrls = [
@@ -35,6 +35,14 @@ const RecipeGrid = () => {
 
   const authors = ["John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander"];
 
+  const [heartClicks, setHeartClicks] = useState(Array(imageUrls.length).fill(false));
+
+  const handleHeartClick = (index) => {
+    const newHeartClicks = [...heartClicks];
+    newHeartClicks[index] = !newHeartClicks[index];
+    setHeartClicks(newHeartClicks);
+  };
+
   return (
     <section className='container mx-auto px-4 max-w-7xl'>
       {/* parent grid container */}
@@ -48,7 +56,7 @@ const RecipeGrid = () => {
             </div>
             <div className='img-overlay h-[120px] lg:h-44 w-full absolute top-0 left-0 rounded-xl'></div>
             <div className='p-3 absolute top-0 right-0'>
-              <i className='fa-solid fa-heart text-white'></i>
+              <i className={`fa-solid fa-heart text-white hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${heartClicks[index] ? "text-red-500" : ""}`} onClick={() => handleHeartClick(index)}></i>
             </div>
             <div className=' mt-[10px]'>
               <h3 className='font-medium mb-5'>{titles[index]}</h3>
