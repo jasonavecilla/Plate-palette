@@ -10,10 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
-      <head>
-        <script src='https://kit.fontawesome.com/bafe0bdc31.js' crossorigin='anonymous'></script>
-      </head>
+    <html lang="en">
+      <head></head>
       <body className={inter.className}>{children}</body>
     </html>
   );

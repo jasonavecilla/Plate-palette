@@ -11,7 +11,7 @@ export default function NavBar() {
       <div className="justify-between px-4 mx-auto  md:items-center md:flex md:px-8 pb-9 pt-5 ">
         <div>
           <div className="flex items-center justify-between">
-            <a href="javascript:void(0)">
+            <a hhref="#">
               <div className="flex flex-wrap drop-shadow-xl  ">
                 <svg
                   width="173"
@@ -73,19 +73,19 @@ export default function NavBar() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-Brown hover:text-black font-quicksand text-base">
-                <a href="javascript:void(0)">HOME</a>
+                <a href="#">HOME</a>
               </li>
               <li className="text-Brown hover:text-black font-quicksand text-base">
-                <a href="javascript:void(0)">RECIPE</a>
+                <a href="#">RECIPE</a>
               </li>
               <li className="text-Brown hover:text-black font-quicksand text-base">
-                <a href="javascript:void(0)">ABOUT US</a>
+                <a href="j#">ABOUT US</a>
               </li>
               <li className="text-Brown hover:text-black font-quicksand text-base">
-                <a href="javascript:void(0)">CONTACT US</a>
+                <a href="#">CONTACT US</a>
               </li>
               <li className="text-Brown hover:text-black font-quicksand text-base">
-                <a href="javascript:void(0)">BLOG</a>
+                <a href="#">BLOG</a>
               </li>
             </ul>
           </div>
