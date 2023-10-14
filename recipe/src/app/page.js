@@ -25,9 +25,7 @@ export default function Home() {
       <RecipeGrid />
       <Blog />
       <Newsletter />
-      <FAQAccordian />
-
-   
+      <FAQAccordian />  
       <Footer />
 
     </>
