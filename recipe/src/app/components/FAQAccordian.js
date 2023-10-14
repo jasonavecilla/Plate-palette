@@ -5,19 +5,24 @@ import FAQItem from "./FAQItem";
 
 const faqData = [
   {
-    question: "How do I search for recipes?",
+    question: "Explore the Home Screen",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "At the home screen of this site, you can see featured recipes, categories, search options, and blogs.",
   },
   {
-    question: "Lorem ipsum dolor sit amet?",
+    question: "Search for a Recipe",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Use the search bar to look for a specific recipe or browse through categories to discover new ideas.",
   },
   {
-    question: "Ut enim ad minim veniam?",
+    question: "Select a Recipe",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Once you find a recipe you want to try, tap on it to access the detailed recipe page.",
+  },
+  {
+    question: "View Recipe Details",
+    answer:
+      "On the recipe page, you'll see the recipe name, an image of the dish, and additional information. Review the list of ingredients and the step-by-step cooking instructions.",
   },
 ];
 
@@ -28,26 +33,20 @@ export default function FAQAccordian() {
 
   return (
     <>
-      {/* <!-- FAQ --> */}
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        {/* <!-- Title --> */}
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight">
-            Your questions, answered
+            How to use this recipe app?
           </h2>
           <p className="mt-1 text-blue-600 ">
-            Answers to the most frequently asked questions.
+            A step-by-ste guide on using this app
           </p>
         </div>
-        {/* <!-- End Title --> */}
 
         <div className="max-w-2xl mx-auto">
-          {/* <!-- Accordion --> */}
           <div className="hs-accordion-group">{faqElements}</div>
-          {/* <!-- End Accordion --> */}
         </div>
       </div>
-      {/* <!-- End FAQ --> */}
     </>
   );
 }
