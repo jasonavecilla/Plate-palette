@@ -17,11 +17,11 @@ const sortOptions = [
   { name: "Newest", href: "#", current: false },
 ];
 const subCategories = [
-  { name: "Totes", href: "#" },
-  { name: "Backpacks", href: "#" },
-  { name: "Travel Bags", href: "#" },
-  { name: "Hip Bags", href: "#" },
-  { name: "Laptop Sleeves", href: "#" },
+  { name: "Dessert", href: "#" },
+  { name: "Soups and Stews", href: "#" },
+  { name: "Breakfast and Brunch", href: "#" },
+  { name: "Appetizers and Snacks", href: "#" },
+  { name: "Side Dishes", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -184,7 +184,10 @@ export default function SearchFilter() {
                 onClick={() => setMobileFiltersOpen(true)}
               >
                 <span className="sr-only">Filters</span>
-                <FunnelIcon className="h-5 w-5 text-blue-400" aria-hidden="true" />
+                <FunnelIcon
+                  className="h-5 w-5 text-blue-400"
+                  aria-hidden="true"
+                />
               </button>
             </div>
           </div>
