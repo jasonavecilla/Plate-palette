@@ -11,7 +11,6 @@ import FAQAccordian from "./components/FAQAccordian";
 import Newsletter from "./components/Newsletter";
 import RecipeGrid from "./components/RecipeGrid";
 
-
 export default function Home() {
   useEffect(() => {
     import("preline");
@@ -19,15 +18,12 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
       <SlideShow />
       <SearchFilter />
       <RecipeGrid />
       <Blog />
       <Newsletter />
-      <FAQAccordian />  
-      <Footer />
-
+      <FAQAccordian />
     </>
   );
 }

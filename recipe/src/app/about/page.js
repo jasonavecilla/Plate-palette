@@ -1,6 +1,5 @@
 "use client";
 
-
 const values = [
   {
     name: "Quality Recipes",
@@ -34,11 +33,9 @@ const values = [
   },
 ];
 
-
 export default function About() {
-
   return (
-    <section className="bg-white">
+    <section className="bg-white mb-20">
       <main className="isolate">
         {/* Hero section */}
         <div className="relative isolate -z-10">
@@ -120,8 +117,9 @@ export default function About() {
               Our values
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              From everyday staples to exotic specialties, we offer a wide array
+              of fresh, seasonal ingredients, inspiring your culinary creativity
+              and guaranteeing you find the perfect components for your dishes.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -133,8 +131,6 @@ export default function About() {
             ))}
           </dl>
         </div>
-
-
       </main>
     </section>
   );
