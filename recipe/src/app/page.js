@@ -7,11 +7,16 @@ import FAQAccordian from "./components/FAQAccordian";
 import Newsletter from "./components/Newsletter";
 import RecipeGrid from "./components/RecipeGrid";
 import { useState } from "react";
+import testData from './testData'
 
 
 export default function Home() {
 
-  const [recipes, setRecipes] = useState(null)
+  // const [recipes, setRecipes] = useState(null)
+
+  // test data using the query 'tomato'
+  const [recipes, setRecipes] = useState(testData.results)
+
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   console.log(recipes)

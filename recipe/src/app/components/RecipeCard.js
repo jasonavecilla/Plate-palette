@@ -5,6 +5,10 @@ function RecipeCard({recipe}) {
 
   const [isFav, setIsFav] = useState(false)
 
+  const rating = (recipe.user_ratings.score * 5).toFixed(1)
+  const numReviews = recipe.user_ratings.count_positive + recipe.user_ratings.count_negative
+ 
+
   return (
     <div className='relative flex flex-col'>
         {/* image div */}
@@ -20,9 +24,9 @@ function RecipeCard({recipe}) {
             <div className='flex justify-between text-xs text-dark-400'>
             <div className='flex items-center'>
                 <i className='fa-solid fa-star text-yellow-500 mr-[6px]'></i>
-                <span>{recipe.user_ratings.count_positive}</span>
+                <span>{rating}({numReviews})</span>
             </div>
-            <span>by {recipe.credits[0].name}</span>
+            <span>by {recipe.credits[0].name ? recipe.credits[0].name : 'anonymous' }</span>
             </div>
         </div>
     </div>
