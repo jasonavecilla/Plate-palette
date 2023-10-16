@@ -34,11 +34,39 @@ const RecipeGrid = ({recipes, loading, error}) => {
     "General Tso Chicken",
   ];
 
-  const ratings = ["5.0(24)", "3.0(94)", "4.2(29)", "5.0(24)", "3.0(94)", "4.2(29)", "5.0(24)", "3.0(94)", "4.2(29)", "5.0(24)", "3.0(94)", "4.2(29)"];
+  const ratings = [
+    "5.0(24)",
+    "3.0(94)",
+    "4.2(29)",
+    "5.0(24)",
+    "3.0(94)",
+    "4.2(29)",
+    "5.0(24)",
+    "3.0(94)",
+    "4.2(29)",
+    "5.0(24)",
+    "3.0(94)",
+    "4.2(29)",
+  ];
 
-  const authors = ["John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander", "John Doe", "Jane Fritz", "Adam Lander"];
+  const authors = [
+    "John Doe",
+    "Jane Fritz",
+    "Adam Lander",
+    "John Doe",
+    "Jane Fritz",
+    "Adam Lander",
+    "John Doe",
+    "Jane Fritz",
+    "Adam Lander",
+    "John Doe",
+    "Jane Fritz",
+    "Adam Lander",
+  ];
 
-  const [heartClicks, setHeartClicks] = useState(Array(imageUrls.length).fill(false));
+  const [heartClicks, setHeartClicks] = useState(
+    Array(imageUrls.length).fill(false)
+  );
 
   const handleHeartClick = (index) => {
     const newHeartClicks = [...heartClicks];
@@ -50,7 +78,7 @@ const RecipeGrid = ({recipes, loading, error}) => {
 
   return (
     <>
-      <section className='container mx-auto px-4 max-w-7xl mt-20'>
+      <section className="container mx-auto px-4 max-w-7xl mt-20">
       
         {loading && <Spinner/>}
 
@@ -59,23 +87,32 @@ const RecipeGrid = ({recipes, loading, error}) => {
         {/* recipes before searching api */}
         {!recipes && !loading && !error && 
         // {/* parent grid container */}
-        <div className='grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3'>
+        <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
           {imageUrls.map((imageUrl, index) => (
             // grid child
-            <div key={index} className='relative flex flex-col'>
+            <div key={index} className="relative flex flex-col">
               {/* image div */}
-              <div className='h-[120px] lg:h-44'>
-                <img src={imageUrl} className='rounded-xl h-full w-full object-cover' alt={`Recipe ${index}`} />
+              <div className="h-[120px] lg:h-44">
+                <img
+                src={imageUrl}
+                className="rounded-xl h-full w-full object-cover"
+                alt={`Recipe ${index}`}
+              />
               </div>
-              <div className='img-overlay h-[120px] lg:h-44 w-full absolute top-0 left-0 rounded-xl'></div>
-              <div className='p-3 absolute top-0 right-0'>
-                <i className={`fa-solid fa-heart  hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${heartClicks[index] ? "text-red-500" : "text-white"}`} onClick={() => handleHeartClick(index)}></i>
+              <div className="img-overlay h-[120px] lg:h-44 w-full absolute top-0 left-0 rounded-xl"></div>
+              <div className="p-3 absolute top-0 right-0">
+                <i
+                className={`fa-solid fa-heart  hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${
+                  heartClicks[index] ? "text-red-500" : "text-white"
+                }`}
+                onClick={() => handleHeartClick(index)}
+              ></i>
               </div>
-              <div className=' mt-[10px]'>
-                <h3 className='font-medium mb-5'>{titles[index]}</h3>
-                <div className='flex justify-between text-xs text-dark-400'>
-                  <div className='flex items-center'>
-                    <i className='fa-solid fa-star text-yellow-500 mr-[6px]'></i>
+              <div className=" mt-[10px]">
+                <h3 className="font-medium mb-5">{titles[index]}</h3>
+                <div className="flex justify-between text-xs text-dark-400">
+                  <div className="flex items-center">
+                    <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
                     <span>{ratings[index]}</span>
                   </div>
                   <span>by {authors[index]}</span>
