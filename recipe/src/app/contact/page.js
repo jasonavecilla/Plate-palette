@@ -1,9 +1,3 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
-
 export default function Contact() {
   return (
     <div className="relative isolate bg-white">
