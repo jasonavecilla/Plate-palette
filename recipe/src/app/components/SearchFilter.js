@@ -10,7 +10,6 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
-import useGetRecipes from "../hooks/useGetRecipes";
 import axios from "axios";
 
 const sortOptions = [
