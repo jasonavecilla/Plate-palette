@@ -1,76 +1,33 @@
-import {
-  BuildingOffice2Icon,
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
-
 export default function Contact() {
   return (
     <div className="relative isolate bg-white">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-yellowgreen-300 ring-1 ring-dark-700/10 lg:w-1/2"></div>
-            <h2 className="text-3xl font-bold tracking-tight text-dark-700">
-              Feel free to reach out
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-dark-700">
-              Do not hesitate to contact us with any questions or feedback. We
-              are here to assist you with anything you need. Your input matters
-              to us.
-            </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-dark-700"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd className="text-dark-700">
-                  545 Mavis Island
-                  <br />
-                  Chicago, IL 99191
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-dark-700"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="text-dark-700" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
-                  </a>
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <EnvelopeIcon
-                    className="h-7 w-6 text-dark-700"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="text-dark-700" href="mailto:hello@example.com">
-                    platepalette@example.com
-                  </a>
-                </dd>
-              </div>
-            </dl>
+          <div className="lg:absolute lg:inset-0 lg:right-1/2">
+            <img
+              className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
+              src="https://images.unsplash.com/photo-1563865436874-9aef32095fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
           </div>
         </div>
+
         <form
           action="#"
           method="POST"
-          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+          className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-4"
         >
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+            <div className="mb-10">
+              <h2 className="text-3xl font-bold tracking-tight text-dark-700">
+                Feel free to reach out
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-dark-700 italic">
+                Do not hesitate to contact us with any questions or feedback. We
+                are here to assist you with anything you need. Your input
+                matters to us.
+              </p>
+            </div>
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label
