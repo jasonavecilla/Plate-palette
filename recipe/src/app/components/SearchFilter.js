@@ -73,7 +73,7 @@ export default function SearchFilter({setRecipes, setLoading, setError}) {
  
 
   return (
-    <div className="bg-white mt-60">
+    <div className="bg-white -mt-10 ">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>

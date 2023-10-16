@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function SlideShow() {
@@ -28,7 +27,7 @@ export default function SlideShow() {
   ];
   return (
     <>
-      <div className="h-[100px] w-full">
+      <div className=" w-full relative">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -45,7 +44,7 @@ export default function SlideShow() {
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className="relative mix-blend-darken bg-opacity-40 bg-gray-700 ">
+              <div className=" mix-blend-darken bg-opacity-40 bg-gray-700 ">
                 <div className="absolute  inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%]  text-white flex flex-col container ">
                   <p className=" text-center  text-6xl md:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase p-2 md:p-0">
                     Unleash Your Inner Chef
