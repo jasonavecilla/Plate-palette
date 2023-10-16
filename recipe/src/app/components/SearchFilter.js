@@ -54,6 +54,7 @@ export default function SearchFilter({setRecipes, setLoading, setError}) {
 
       try {
         const response = await axios.request(options)
+
         if(response.data.count === 0) {
           setError(`Cannot find recipe with this ingredient ${query}`)
         } else {
