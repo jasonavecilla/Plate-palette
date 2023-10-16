@@ -2,11 +2,26 @@ export default function Newsletter() {
   return (
     <div className="max-w-full mx-auto py-16 sm:py-24">
       <div className="mx-auto sm:px-6 lg:px-8">
+
+        <div
+          className="max-w-full mx-auto py-16 sm:py-24"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)",
+            backgroundSize: "cover",
+          }}
+        >
+          <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Stay Updated with Our Latest Recipe.
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-white font-semibold">
+
         <div className=" bg-olive-300 px-6 py-24 sm:px-24 xl:py-32">
           <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl">
             Stay Updated with Our Latest Recipe.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-dark-400 font-semibold">
+
             Join our newsletter to stay updated with our latest and most
             delicious recipes, culinary tips, and mouthwatering meal ideas
             delivered straight to your inbox!

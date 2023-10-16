@@ -1,7 +1,11 @@
 "use client";
 import { useEffect } from "react";
+
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { News_Cycle } from "next/font/google";
+import Newsletter from "./components/Newsletter";
 
 import SlideShow from "./components/SlideShow";
 
@@ -11,6 +15,7 @@ import FAQAccordian from "./components/FAQAccordian";
 import Newsletter from "./components/Newsletter";
 import RecipeGrid from "./components/RecipeGrid";
 
+
 export default function Home() {
   useEffect(() => {
     import("preline");
@@ -18,12 +23,18 @@ export default function Home() {
 
   return (
     <>
+
+      <Navbar />
+      <Newsletter />
+      <Footer />
+
       <SlideShow />
       <SearchFilter />
       <RecipeGrid />
       <Blog />
       <Newsletter />
       <FAQAccordian />
+
     </>
   );
 }
