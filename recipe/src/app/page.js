@@ -14,7 +14,7 @@ export default function Home() {
 
   // const [recipes, setRecipes] = useState(null)
 
-  // test data using the query 'tomato'
+  // test data 
   const [recipes, setRecipes] = useState(testData.results)
 
   const [loading, setLoading] = useState(false)
