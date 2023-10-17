@@ -66,16 +66,12 @@ function RecipeModal({recipe, rating, numReviews}) {
                                         
                             {/* video link */}
                             <div className='relative mt-5 flex justify-center items-center '>
-                                <div>     
-                                    <a href={recipe.original_video_url } target='_blank'>
-                                        <div className=''>
-                                            <img src={recipe.thumbnail_url} className='object-scale-down w-1/2 mx-auto rounded-lg  hover:opacity-80'/> 
-                                        </div>
-                                        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="gray" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM7 6l8 4l-8 4V6z" /></svg> 
-                                        </div>
-                                    </a>
-                                </div>
+                                <a href={recipe.original_video_url } target='_blank' className="hover:opacity-80 ">
+                                    <img src={recipe.thumbnail_url} className='object-cover w-full h-32  rounded-lg  '/> 
+                                    <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="gray" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM7 6l8 4l-8 4V6z" /></svg> 
+                                    </div>
+                                </a>
                             </div>
 
                         </div> 
