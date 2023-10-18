@@ -12,9 +12,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
-        <script src='https://kit.fontawesome.com/bafe0bdc31.js' crossorigin='anonymous'></script>
+        <script
+          src="https://kit.fontawesome.com/bafe0bdc31.js"
+          crossorigin="anonymous"
+        ></script>
       </head>
       <body className={inter.className}>
         <NavBar />
