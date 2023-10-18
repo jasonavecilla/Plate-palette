@@ -7,7 +7,7 @@ export default function Newsletter() {
       }}
     >
       <div className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl">
-        Stay Updated with Our Latest Recipe.
+        Stay Updated with Our Latest Recipe
       </div>
       <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-dark font-semibold">
         Join our newsletter to stay updated with our latest and most delicious

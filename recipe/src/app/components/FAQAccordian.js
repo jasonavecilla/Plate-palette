@@ -39,7 +39,7 @@ export default function FAQAccordian() {
             How to use this recipe app?
           </h2>
           <p className="mt-1 text-blue-600 ">
-            A step-by-ste guide on using this app
+            A step-by-step guide on using this app
           </p>
         </div>
 
