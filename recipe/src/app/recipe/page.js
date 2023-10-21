@@ -1,5 +1,7 @@
-import RootLayout from "../layout";
+"use client";
+import RecipeGrid from "../components/RecipeGrid";
 import RecipeBlock from "../components/RecipeBlock";
+
 export default function Home() {
   return (
     <div>
