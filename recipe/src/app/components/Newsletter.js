@@ -1,7 +1,7 @@
 export default function Newsletter() {
   return (
     <div
-      className="bg-cover bg-center py-16 sm:py-24"
+      className="bg-cover bg-center py-16 sm:py-24 my-10"
       style={{
         backgroundImage: `url(https://images.unsplash.com/34/rcaNUh3pQ9GD8w7Iy8qE__DSC0940.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80)`,
       }}
