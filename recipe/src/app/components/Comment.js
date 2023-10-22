@@ -32,8 +32,8 @@ const commentData = [
 
 export default function Comment() {
   return (
-    <section>
-      <h1 className="text-center font-bold text-3xl">Join the Conversation: Share Your Thoughts and Opinions</h1>
+    <section className="my-10">
+      <h1 className="text-center font-bold text-3xl">Join the Conversation</h1>
       <div className="bg-white dark:bg-gray-900 py-8 lg:py-16 antialiased">
         <div className="max-w-2xl mx-auto px-4">
           <div className="flex justify-between items-center mb-6">
