@@ -19,7 +19,6 @@ export default function Home() {
 
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  console.log(recipes)
 
   useEffect(() => {
     import("preline");
