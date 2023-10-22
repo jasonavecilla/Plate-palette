@@ -10,6 +10,7 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
+import axios from "axios";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -28,8 +29,48 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SearchFilter() {
+export default function SearchFilter({setRecipes, setLoading, setError}) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [query, setQuery] = useState('')
+
+  const handleKeyUp = async (e) => {
+    if(e.key === 'Enter') {
+      setError(null)
+      setLoading(true)
+    
+      const options = {
+        method: 'GET',
+        url: 'https://tasty.p.rapidapi.com/recipes/list',
+        params: {
+          from: '0',
+          size: '20',
+          q: `${query}`
+        },
+        headers: {
+          'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RECIPE_KEY,
+          'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
+        }
+      };
+
+      try {
+        const response = await axios.request(options)
+
+        if(response.data.count === 0) {
+          setError(`Cannot find recipe with this ingredient ${query}`)
+        } else {
+          console.log(response.data)
+          setRecipes(response.data.results)
+        }
+      } catch (error) {
+        console.error(error)
+        setError(error)
+      } finally{
+        setLoading(false)
+        setQuery('')
+      }
+    }
+  }
+ 
 
   return (
     <div className="bg-white -mt-10 ">
@@ -111,6 +152,9 @@ export default function SearchFilter() {
                   required
                   className="w-[95%] rounded-md border border-dark-400 bg-white px-3.5 py-3 pl-10 text-dark-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   placeholder="Search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  onKeyUp={handleKeyUp}
                 />
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
