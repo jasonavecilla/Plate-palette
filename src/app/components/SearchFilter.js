@@ -29,48 +29,47 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function SearchFilter({setRecipes, setLoading, setError}) {
+export default function SearchFilter({ setRecipes, setLoading, setError }) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState("");
 
   const handleKeyUp = async (e) => {
-    if(e.key === 'Enter') {
-      setError(null)
-      setLoading(true)
-    
+    if (e.key === "Enter") {
+      setError(null);
+      setLoading(true);
+
       const options = {
-        method: 'GET',
-        url: 'https://tasty.p.rapidapi.com/recipes/list',
+        method: "GET",
+        url: "https://tasty.p.rapidapi.com/recipes/list",
         params: {
-          from: '0',
-          size: '20',
-          q: `${query}`
+          from: "0",
+          size: "20",
+          q: `${query}`,
         },
         headers: {
-          'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RECIPE_KEY,
-          'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
-        }
+          "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RECIPE_KEY,
+          "X-RapidAPI-Host": "tasty.p.rapidapi.com",
+        },
       };
 
       try {
-        const response = await axios.request(options)
+        const response = await axios.request(options);
 
-        if(response.data.count === 0) {
-          setError(`Cannot find recipe with this ingredient ${query}`)
+        if (response.data.count === 0) {
+          setError(`Cannot find recipe with this ingredient ${query}`);
         } else {
-          console.log(response.data)
-          setRecipes(response.data.results)
+          console.log(response.data);
+          setRecipes(response.data.results);
         }
       } catch (error) {
-        console.error(error)
-        setError(error)
-      } finally{
-        setLoading(false)
-        setQuery('')
+        console.error(error);
+        setError(error);
+      } finally {
+        setLoading(false);
+        setQuery("");
       }
     }
-  }
- 
+  };
 
   return (
     <div className="bg-white -mt-10 ">
