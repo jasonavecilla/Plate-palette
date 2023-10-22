@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import RecipeCard from "./RecipeCard";
-import Spinner from './Spinner'
+import Spinner from "./Spinner";
 
-const RecipeGrid = ({recipes, loading, error}) => {
-
+const RecipeGrid = ({ recipes, loading, error }) => {
   const imageUrls = [
     "https://www.ambitiouskitchen.com/wp-content/uploads/fly-images/27298/Monique-Turkey-Sloppy-Joes-1-500x375-c.jpg",
     "https://sweetpeaskitchen.com/wp-content/uploads/2010/10/Easy-Classic-Brown-Sugar-Meatloaf-og.jpg",
@@ -112,10 +111,9 @@ const RecipeGrid = ({recipes, loading, error}) => {
   };
 
   return (
-    <section className="container mx-auto px-4 max-w-7xl mt-20">
+    <section className="container mx-auto px-4 max-w-7xl my-20">
       {loading && <Spinner />}
       {error && <p className="text-center font-semibold">{error}</p>}
-
       <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
         {generateGridItems()}
       </div>
