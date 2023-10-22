@@ -79,7 +79,7 @@ export default function Comment() {
                   </p>
                 </div>
               </footer>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="text-dark dark:text-gray-400">
                 {comment.content}
               </p>
 

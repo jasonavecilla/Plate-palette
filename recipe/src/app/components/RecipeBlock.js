@@ -67,7 +67,7 @@ function CheckboxList({ instructions }) {
                   <label>
                     <input
                       type="checkbox"
-                      class="form-checkbox bg-blue border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500 "
+                      className="form-checkbox bg-blue border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500 "
                       checked={item.checked}
                       onChange={() => handleCheckboxChange(item.id)}
                     />
@@ -103,7 +103,7 @@ function CheckboxList({ instructions }) {
             {mockData[0].ingredients.map((ingredient, index) => (
               <li className="text-dark font-light" key={index}>
                 {ingredient}
-                <hr class="h-0.5 my-7 pl-20 bg-gray-300 border-0   "></hr>
+                <hr className="h-0.5 my-7 pl-20 bg-gray-300 border-0   "></hr>
               </li>
             ))}
           </ul>

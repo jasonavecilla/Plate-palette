@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           src="https://kit.fontawesome.com/bafe0bdc31.js"
           crossOrigin="anonymous"
         ></script>
-        <link rel="icon" type="image/png" href="/public/assets/logo.svg" />
+        <link rel="icon" type="image/x-icon" href="/public/assets/logo.svg" />
       </head>
       <body className={inter.className}>
         <NavBar />
