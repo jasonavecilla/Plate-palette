@@ -43,19 +43,19 @@ export default function NavBar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-Brown hover:text-black font-quicksand text-base">
+              <li className="text-Brown hover:text-black font-medium text-base">
                 <a href="/">HOME</a>
               </li>
-              <li className="text-Brown hover:text-black font-quicksand text-base">
+              <li className="text-Brown hover:text-black font-medium text-base">
                 <a href="/recipe">RECIPE</a>
               </li>
-              <li className="text-Brown hover:text-black font-quicksand text-base">
+              <li className="text-Brown hover:text-black font-medium text-base">
                 <a href="/about">ABOUT US</a>
               </li>
-              <li className="text-Brown hover:text-black font-quicksand text-base">
+              <li className="text-Brown hover:text-black font-medium text-base">
                 <a href="/contact">CONTACT US</a>
               </li>
-              <li className="text-Brown hover:text-black font-quicksand text-base">
+              <li className="text-Brown hover:text-black font-medium text-base">
                 <a href="/blog">BLOG</a>
               </li>
             </ul>
