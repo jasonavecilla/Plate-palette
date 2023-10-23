@@ -1,7 +1,5 @@
 "use client";
 
-require("dotenv").config();
-
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -13,6 +11,7 @@ import {
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
 import axios from "axios";
+import "dotenv/config";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
