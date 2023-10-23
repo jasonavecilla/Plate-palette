@@ -29,6 +29,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
+
+
 export default function SearchFilter({ setRecipes, setLoading, setError }) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [query, setQuery] = useState("");
@@ -38,22 +40,8 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
       setError(null);
       setLoading(true);
 
-      const options = {
-        method: "GET",
-        url: "https://tasty.p.rapidapi.com/recipes/list",
-        params: {
-          from: "0",
-          size: "20",
-          q: `${query}`,
-        },
-        headers: {
-          "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RECIPE_KEY,
-          "X-RapidAPI-Host": "tasty.p.rapidapi.com",
-        },
-      };
-
       try {
-        const response = await axios.request(options);
+        const response = await axios.get(`api/recipes?data=${query}`)
 
         if (response.data.count === 0) {
           setError(`Cannot find recipe with this ingredient ${query}`);
@@ -63,7 +51,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
         }
       } catch (error) {
         console.error(error);
-        setError(error);
+        setError(error.response.data.message);
       } finally {
         setLoading(false);
         setQuery("");
