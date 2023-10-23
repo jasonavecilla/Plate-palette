@@ -1,5 +1,7 @@
 "use client";
 
+require("dotenv").config();
+
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -47,7 +49,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
           q: `${query}`,
         },
         headers: {
-          "X-RapidAPI-Key": "1dc130b5b2mshb4ff6bd26c3f4a9p11da44jsn628efc6659d8",
+          "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RECIPE_KEY,
           "X-RapidAPI-Host": "tasty.p.rapidapi.com",
         },
       };
