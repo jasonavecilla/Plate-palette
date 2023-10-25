@@ -42,17 +42,21 @@ function RecipeModal({ recipe, rating, numReviews }) {
                   <div className="flex gap-2 sm:col-start-3 mb-2 justify-self-end">
                     {/* time */}
                     <div className="flex flex-col text-sm justify-center items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M12 20a8 8 0 0 0 8-8a8 8 0 0 0-8-8a8 8 0 0 0-8 8a8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10a10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67l-.75 1.23L11 13V7h1.5Z"
-                        />
-                      </svg>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      class="icon icon-tabler icon-tabler-clock" 
+                      width="30" 
+                      height="30" 
+                      viewBox="0 0 24 24" 
+                      stroke-width="2" 
+                      stroke="currentColor" 
+                      fill="none" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                      <path d="M12 7v5l3 3"></path>
+                    </svg>
                       <p>
                         {recipe.total_time_minutes
                           ? recipe.total_time_minutes + " mins"
@@ -62,17 +66,24 @@ function RecipeModal({ recipe, rating, numReviews }) {
 
                     {/* num serves */}
                     <div className="flex flex-col text-sm justify-center items-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
-                        />
-                      </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-users"
+                      width="30"
+                      height="30"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                      <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                      <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                    </svg>
                       <p>Serves {recipe.num_servings}</p>
                     </div>
                   </div>
