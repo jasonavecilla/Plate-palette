@@ -44,15 +44,15 @@ function RecipeModal({ recipe, rating, numReviews }) {
                     <div className="flex flex-col text-sm justify-center items-center">
                     <svg 
                       xmlns="http://www.w3.org/2000/svg" 
-                      class="icon icon-tabler icon-tabler-clock" 
+                      className="icon icon-tabler icon-tabler-clock" 
                       width="30" 
                       height="30" 
                       viewBox="0 0 24 24" 
-                      stroke-width="2" 
+                      strokeWidth="2" 
                       stroke="currentColor" 
                       fill="none" 
-                      stroke-linecap="round" 
-                      stroke-linejoin="round">
+                      strokeLinecap="round" 
+                      strokeLinejoin="round">
                       <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                       <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
                       <path d="M12 7v5l3 3"></path>
@@ -68,15 +68,15 @@ function RecipeModal({ recipe, rating, numReviews }) {
                     <div className="flex flex-col text-sm justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="icon icon-tabler icon-tabler-users"
+                      className="icon icon-tabler icon-tabler-users"
                       width="30"
                       height="30"
                       viewBox="0 0 24 24"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                       stroke="#000000"
                       fill="none"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
