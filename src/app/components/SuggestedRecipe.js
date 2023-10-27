@@ -55,14 +55,14 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
     } else {
       return imageUrls.map((imageUrl, index) => (
         <div key={index} className="relative flex flex-col">
-          <div className="h-[120px] lg:h-44">
+          <div className="h-[100px] lg:h-40">
             <img
               src={imageUrl}
               className="rounded-xl h-full w-full object-cover"
               alt={`Recipe ${index}`}
             />
           </div>
-          <div className="img-overlay h-[120px] lg:h-44 w-full absolute top-0 left-0 rounded-xl"></div>
+          <div className="img-overlay h-[100px] lg:h-40 w-full absolute top-0 left-0 rounded-xl"></div>
           <div className="p-3 absolute top-0 right-0">
             <i
               className={`fa-solid fa-heart text-white hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${
@@ -73,7 +73,7 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
           </div>
           <div className="mt-[10px]">
             <h3 className="font-medium mb-5">{titles[index]}</h3>
-            <div className="flex justify-between text-xs text-dark-400">
+            <div className="flex justify-between text-xs text-dark-600">
               <div className="flex items-center">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
                 <span>{ratings[index]}</span>
