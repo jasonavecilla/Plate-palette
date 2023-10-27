@@ -8,7 +8,7 @@ import RecipeImage from "../components/RecipeImage";
 export default function page() {
   return (
     <>
-      <RecipeImage></RecipeImage>
+      <RecipeImage />
       <RecipeBlock />
       <Comment />
       <SuggestedRecipe />
