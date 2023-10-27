@@ -52,7 +52,7 @@ function CheckboxList({ instructions }) {
   };
 
   return (
-    <section className='container mx-auto px-3 max-w-7xl mt-20'>
+    <section className='container mx-auto px-12 max-w-7xl mt-20'>
       <div className='flex flex-col md:grid md:grid-cols-3 gap-x-10 px-5 md:px-2 gap-y-5 w-full h-full pb-2'>
         {/* Procedure Part */}
         <div className='bg-gray-500 bg-opacity-10 md:order-first order-last col-span-2 w-full pb-20 pr-0 md:pr-10'>

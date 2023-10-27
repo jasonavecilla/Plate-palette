@@ -87,7 +87,7 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
 
   return (
     <>
-      <section className="my-20">
+      <section className="container mx-auto px-6 max-w-7xl my-20">
         <h1 className="text-center font-bold text-3xl">Discover Culinary Inspiration</h1>
         <div className="container mx-auto px-4 max-w-7xl mt-20">
           <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
