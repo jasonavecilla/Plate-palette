@@ -56,7 +56,7 @@ function CheckboxList({ instructions }) {
       <div className='flex flex-col md:grid md:grid-cols-3 gap-x-10 px-5 md:px-2 gap-y-5 w-full h-full pb-2'>
         {/* Procedure Part */}
         <div className='bg-gray-500 bg-opacity-10 md:order-first order-last col-span-2 w-full pb-20 pr-0 md:pr-10'>
-          <h1 className='uppercase pt-10 md:pt-5 px-5 font-bold text-3xl mb-5 '>How to make it</h1>
+          <h1 className='uppercase pt-10 md:pt-5 px-5 font-bold text-xl mb-5'>How to make it</h1>
 
           <div className='w-full '>
             {items.map((item, index) => (
@@ -68,10 +68,10 @@ function CheckboxList({ instructions }) {
                   </label>
 
                   {/* PROCEDURES */}
-                  <div className={item.checked ? " text-gray-400 " : "text-gray-900"}>
+                  <div className={item.checked ? " text-gray-400" : "text-gray-900"}>
                     <div className='  '>
-                      <h1 className='text-lg font-medium mb-2'>STEP {index + 1} </h1>
-                      <p className='text-md  mt-2 leading-relaxed'>{item.label}</p>
+                      <h1 className='text-md font-medium mb-2'>STEP {index + 1} </h1>
+                      <p className='text-sm mt-2 leading-relaxed'>{item.label}</p>
                     </div>
                   </div>
                 </div>
@@ -84,12 +84,12 @@ function CheckboxList({ instructions }) {
         <div className='md:order-last order-first'>
           {/* Ingredients Part */}
           <div>
-            <h1 className='md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-3xl mb-5 '>Ingredients</h1>
+            <h1 className='md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-xl mb-5 '>Ingredients</h1>
             <ul className='p-5 text-base md:text-md'>
               {mockData[0].ingredients.map((ingredient, index) => (
                 <li className='text-dark font-light' key={index}>
                   {ingredient}
-                  <hr className='h-0.5 my-7 pl-20 bg-gray-300 border-0'></hr>
+                  <hr className='h-0.5 my-5 pl-20 bg-gray-300 border-0'></hr>
                 </li>
               ))}
             </ul>
