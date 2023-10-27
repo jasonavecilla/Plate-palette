@@ -10,7 +10,6 @@ import {
 } from "@heroicons/react/20/solid";
 import axios from "axios";
 
-
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
   { name: "Best Rating", href: "#", current: false },
@@ -138,7 +137,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
           </Dialog>
         </Transition.Root>
 
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <main className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
             <div className="relative flex-grow w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
               <div className="relative">
@@ -147,7 +146,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
                   name="text"
                   type="text"
                   required
-                  className="w-[95%] rounded-md border border-dark-400 bg-white px-3.5 py-3 pl-10 text-dark-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                  className="w-[95%] rounded-md border border-dark-400 bg-white px-3.5 py-1 pl-10 text-dark-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   placeholder="Search"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
@@ -160,7 +159,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
                   width="100"
                   height="100"
                   viewBox="0 0 50 50"
-                  className="h-6 w-6 absolute left-3 top-3 text-dark-400"
+                  className="h-4 w-4 absolute left-3 top-3 text-dark-400"
                 >
                   <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path>
                 </svg>
@@ -169,10 +168,10 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="group inline-flex justify-center text-lg font-medium bg-yellowgreen py-2 pl-4 pr-2 rounded-md text-dark hover:text-gray-900">
+                  <Menu.Button className="group inline-flex justify-center text-md font-medium bg-yellowgreen py-1 pl-4 pr-2 rounded-md text-dark hover:text-gray-900">
                     Sort
                     <ChevronDownIcon
-                      className="-mr-1 ml-1 h-7 w-7 flex-shrink-0 text-dark-400 group-hover:text-gray-500"
+                      className="ml-1 h-6 w-6 flex-shrink-0 text-dark-400 group-hover:text-gray-500"
                       aria-hidden="true"
                     />
                   </Menu.Button>
@@ -226,7 +225,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
               >
                 <span className="sr-only">Filters</span>
                 <FunnelIcon
-                  className="h-5 w-5 text-blue-400"
+                  className="h-4 w-4 text-blue-400"
                   aria-hidden="true"
                 />
               </button>
