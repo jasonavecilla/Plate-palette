@@ -75,7 +75,7 @@ function CheckboxList({ instructions }) {
                     </div>
                   </div>
                 </div>
-                <hr className=' h-0.5 my-5 bg-gray-300 border-0 rounded ml-10 md:ml-20' />
+                <hr className='h-0.5 my-5 bg-gray-300 border-0 rounded ml-10 ' />
               </div>
             ))}
           </div>

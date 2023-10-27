@@ -18,7 +18,7 @@ export default function NavBar() {
         <div>
           <div className="flex items-center justify-between">
             <a href="/">
-              <div className="flex flex-wrap drop-shadow-xl  ">
+              <div className="flex flex-wrap drop-shadow-xl">
                 <Image src={logo} alt="Logo" />
               </div>
             </a>
