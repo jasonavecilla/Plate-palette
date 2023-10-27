@@ -2,11 +2,11 @@ export default function Contact() {
   return (
     <section className="mb-20">
       <div className="relative isolate bg-white">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="lg:absolute lg:inset-0 lg:right-1/2">
               <img
-                className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
+                className="h-60 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
                 src="https://images.unsplash.com/photo-1563865436874-9aef32095fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
@@ -20,10 +20,10 @@ export default function Contact() {
           >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="mb-10">
-                <h2 className="text-3xl font-bold tracking-tight text-dark-700">
+                <h2 className="text-2xl font-bold tracking-tight text-dark-700">
                   Feel free to reach out
                 </h2>
-                <p className="mt-6 text-lg leading-8 text-dark-700 italic">
+                <p className="mt-6 text-md leading-8 text-dark-700 italic">
                   Do not hesitate to contact us with any questions or feedback.
                   We are here to assist you with anything you need. Your input
                   matters to us.

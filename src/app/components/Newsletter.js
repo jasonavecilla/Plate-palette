@@ -9,12 +9,12 @@ export default function Newsletter() {
       <div className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-dark sm:text-4xl">
         Stay Updated with Our Latest Recipe
       </div>
-      <p className="mx-auto mt-4 max-w-xl text-center text-lg leading-8 text-dark font-semibold">
+      <p className="mx-auto md:px-2 px-4 mt-4 max-w-xl text-center text-lg leading-8 text-dark font-semibold">
         Join our newsletter to stay updated with our latest and most delicious
         recipes, culinary tips, and mouthwatering meal ideas delivered straight
         to your inbox!
       </p>
-      <form className="mx-auto mt-10 flex max-w-md gap-x-4">
+      <form className="mx-auto mt-10 flex max-w-md gap-x-4 md:px-2 px-4">
         <label htmlFor="email-address" className="sr-only">
           Email address
         </label>

@@ -45,19 +45,19 @@ export default function SlideShow() {
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className=" mix-blend-darken bg-opacity-40 bg-gray-700 ">
-                <div className="absolute  inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%]  text-white flex flex-col container ">
-                  <p className=" text-center  text-6xl md:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase p-2 md:p-0">
+                <div className="absolute inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%]  text-white flex flex-col container ">
+                  <p className=" text-center  text-6xl md:text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase p-2 md:p-0">
                     Unleash Your Inner Chef
                   </p>
-                  <p className="p-5 md:p-0 text-xl md:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] font-sans-serif font-medium max-w-xxl text-center">
+                  <p className="p-5 md:p-0 text-lg md:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] font-sans-serif font-medium text-center flex items-end justify-center">
                     Where passion meets the plate, our cooking website inspires
                     every chef within you. Discover a world of delectable
                     recipes, culinary tips, and food adventures to savor.
                   </p>
                 </div>
-                <div className="h-full w-full  bg-opacity-5 ">
+                <div className="h-full w-full  bg-opacity-5">
                   <img
-                    className=" h-[55vh] md:h-[50vh] mix-blend-overlay w-full object-cover"
+                    className=" h-[50vh] md:h-[45vh] mix-blend-overlay w-full object-cover"
                     src={slide.image}
                     alt={slide.image}
                   ></img>
