@@ -32,39 +32,37 @@ export default function RecipeImage() {
     },
   ];
   return (
-    <div>
-      <div className="flex flex-col md:flex-row  md:gap-x-10">
+    <section className='container mx-auto px-3 mt-10'>
+      <div className="flex flex-col md:flex-row md:gap-x-10">
         {/* Image */}
-        <div className=" w-full h-full md:pl-20">
-          <div className=" ">
+        <div className="w-full h-full">
             <img
               src={mockData2[0].image}
-              className="w-full p-5 md:p-0 md:h-[600px] bg-cover drop-shadow-md rounded-lg"
+              className="w-full p-5 md:p-0 md:h-[400px] bg-cover drop-shadow-md rounded-lg"
             />
-          </div>
         </div>
         {/* Text */}
         <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full">
           <div className="">
             {/* Title Name */}
-            <p className="font-quicksand text-6xl  "> {mockData2[0].name} </p>
+            <p className="font-bold text-2xl  "> {mockData2[0].name} </p>
           </div>
           {/* Description */}
           <div className="p-2">
-            <p className="font-quicksand text-3xl ">
+            <p className="font-base text-lg ">
               {" "}
               {mockData2[0].description}{" "}
             </p>
             <p></p>
           </div>
           {/* Icons */}
-          <div className="flex  md:flex-row md:gap-x-56 md:pl-5 md:divide-x justify-center items-center">
+          <div className="flex md:flex-row md:gap-x-56 md:pl-5 md:divide-x justify-center items-center">
             <div className="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-clock-exclamation"
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="#000000"
@@ -84,8 +82,8 @@ export default function RecipeImage() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-clock-check"
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="#000000"
@@ -104,8 +102,8 @@ export default function RecipeImage() {
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-users"
-                width="60"
-                height="60"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="#000000"
@@ -125,12 +123,12 @@ export default function RecipeImage() {
             <p></p>
           </div>
           <div>
-            <p className="font-sans-serif text-xl font-light  md:pt-6 md:pb-3">
+            <p className="font-sans-serif text-lg font-md md:pt-6 md:pb-3">
               Created by {mockData2[0].author}
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
