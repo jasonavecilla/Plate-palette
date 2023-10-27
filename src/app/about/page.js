@@ -36,14 +36,14 @@ const values = [
 export default function About() {
   return (
     <section className="bg-white mb-20">
-      <main className="isolate">
+      <main className="">
         {/* Hero section */}
-        <div className="relative isolate -z-10">
+        <div className="relative">
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-              <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-                <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32 border border-black">
+              <div className="mx-auto max-w-xl gap-x-10 lg:mx-0 lg:flex lg:max-w-none lg:items-center border border-black">
+                <div className="w-full max-w-lg lg:shrink-0 xl:max-w-lg border border-black">
+                  <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     We’re changing the way people prepare food.
                   </h1>
                   <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -111,9 +111,9 @@ export default function About() {
         </div>
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div className="mx-auto mt-32 max-w-5xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-3xl">
               Our values
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
