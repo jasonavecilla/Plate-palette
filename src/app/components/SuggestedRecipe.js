@@ -73,7 +73,7 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
           </div>
           <div className="mt-[10px]">
             <h3 className="font-medium mb-5">{titles[index]}</h3>
-            <div className="flex justify-between text-xs text-dark-600">
+            <div className="flex justify-between text-xs dark:text-white">
               <div className="flex items-center">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
                 <span>{ratings[index]}</span>

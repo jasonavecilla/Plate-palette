@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section className="mb-20">
-      <div className="relative isolate bg-white">
+      <div className="relative isolate">
         <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="lg:absolute lg:inset-0 lg:right-1/2">

@@ -35,7 +35,7 @@ const values = [
 
 export default function About() {
   return (
-    <section className="bg-white mb-20">
+    <section className="mb-20">
       <main className="">
         {/* Hero section */}
         <div className="relative">
