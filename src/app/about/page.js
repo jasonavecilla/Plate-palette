@@ -40,9 +40,9 @@ export default function About() {
         {/* Hero section */}
         <div className="relative">
           <div className="overflow-hidden">
-            <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32 border border-black">
-              <div className="mx-auto max-w-xl gap-x-10 lg:mx-0 lg:flex lg:max-w-none lg:items-center border border-black">
-                <div className="w-full max-w-lg lg:shrink-0 xl:max-w-lg border border-black">
+            <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32">
+              <div className="mx-auto max-w-xl gap-x-10 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+                <div className="w-full max-w-lg lg:shrink-0 xl:max-w-lg">
                   <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     We’re changing the way people prepare food.
                   </h1>

@@ -45,7 +45,7 @@ export default function SlideShow() {
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className=" mix-blend-darken bg-opacity-40 bg-gray-700 ">
-                <div className="absolute inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%]  text-white flex flex-col container ">
+                <div className="absolute inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%] text-white flex flex-col">
                   <p className=" text-center  text-6xl md:text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase p-2 md:p-0">
                     Unleash Your Inner Chef
                   </p>
@@ -57,7 +57,7 @@ export default function SlideShow() {
                 </div>
                 <div className="h-full w-full  bg-opacity-5">
                   <img
-                    className=" h-[50vh] md:h-[45vh] mix-blend-overlay w-full object-cover"
+                    className=" h-[50vh] md:h-[65vh] mix-blend-overlay w-full object-cover"
                     src={slide.image}
                     alt={slide.image}
                   ></img>
