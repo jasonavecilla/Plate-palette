@@ -1,6 +1,5 @@
-import Image from "next/image";
-
 export default function RecipeImage() {
+
   const mockData2 = [
     {
       id: "n1",
@@ -31,33 +30,35 @@ export default function RecipeImage() {
       ],
     },
   ];
+
   return (
-    <section className='container mx-auto px-12 mt-10'>
+    <section className="container mx-auto px-12 mt-10">
       <div className="flex flex-col md:flex-row md:gap-x-10">
+
         {/* Image */}
         <div className="w-full h-full">
             <img
               src={mockData2[0].image}
               className="w-full p-5 md:p-0 md:h-[370px] bg-cover drop-shadow-md rounded-lg"
+              alt="spaghetti"
             />
         </div>
+
         {/* Text */}
         <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full">
-          <div className="">
-            {/* Title Name */}
-            <p className="font-bold text-xl  "> {mockData2[0].name} </p>
+          {/* Title Name */}
+          <div> 
+            <p className="font-bold text-xl"> {mockData2[0].name} </p>
           </div>
           {/* Description */}
           <div className="p-2">
-            <p className="font-base text-md ">
-              {" "}
-              {mockData2[0].description}{" "}
+            <p className="font-base text-md">
+              {mockData2[0].description}
             </p>
-            <p></p>
           </div>
           {/* Icons */}
           <div className="flex md:flex-row md:gap-x-56 md:pl-5 md:divide-x justify-center items-center">
-            <div className="">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-clock-exclamation"
@@ -119,15 +120,15 @@ export default function RecipeImage() {
               </svg>
               <p className="font-sans-serif text-2xl">20 mins</p>
             </div>
-
-            <p></p>
           </div>
+          {/* Author */}
           <div>
             <p className="font-sans-serif text-md font-md md:pt-6 md:pb-3">
               Created by {mockData2[0].author}
             </p>
           </div>
         </div>
+
       </div>
     </section>
   );
