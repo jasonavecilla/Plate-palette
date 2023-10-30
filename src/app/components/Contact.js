@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section className="mb-20">
       <div className="relative isolate">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="lg:absolute lg:inset-0 lg:right-1/2">
               <img
@@ -16,7 +16,7 @@ export default function Contact() {
           <form
             action="#"
             method="POST"
-            className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-4"
+            className="px-6 pb-24 pt-20 sm:pb-32 lg:px-2 lg:py-4"
           >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="mb-10">
@@ -43,7 +43,7 @@ export default function Contact() {
                       name="first-name"
                       id="first-name"
                       autoComplete="given-name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -77,7 +77,7 @@ export default function Contact() {
                       name="email"
                       id="email"
                       autoComplete="email"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                       name="phone-number"
                       id="phone-number"
                       autoComplete="tel"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
@@ -110,7 +110,7 @@ export default function Contact() {
                       name="message"
                       id="message"
                       rows={4}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 dark:text-white shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-600 sm:text-sm sm:leading-6"
                       defaultValue={""}
                     />
                   </div>
@@ -119,7 +119,7 @@ export default function Contact() {
               <div className="mt-8 flex justify-end">
                 <button
                   type="submit"
-                  className="rounded-md bg-yellowgreen px-3.5 py-2.5 text-center text-sm font-semibold dark:text-white shadow-sm hover:bg-yellowgreen-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-yellowgreen px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-yellowgreen-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Send message
                 </button>
