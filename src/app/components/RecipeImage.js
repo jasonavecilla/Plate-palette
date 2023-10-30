@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function RecipeImage() {
+  const { mode } = useContext(ThemeContext);
   const mockData2 = [
     {
       id: "n1",
@@ -31,6 +34,8 @@ export default function RecipeImage() {
       ],
     },
   ];
+
+  
   return (
     <section className='container mx-auto px-12 mt-10'>
       <div className="flex flex-col md:flex-row md:gap-x-10">
@@ -65,7 +70,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -86,7 +91,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -106,7 +111,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"

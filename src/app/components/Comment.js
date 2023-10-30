@@ -42,15 +42,15 @@ export default function Comment() {
             </h2>
           </div>
           <form className="mb-6 md:px-0 px-4">
-            <div className="py-2 px-4 mb-4 rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+            <div className="py-2 px-4 mb-4 rounded-lg rounded-t-lg border border-gray-200 dark:border-gray-700">
               <label className="sr-only">Your comment</label>
               <textarea
                 id="comment"
                 rows="6"
-                className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-dark focus:outline-none dark:text-white dark:placeholder-gray-400 dark:bg-gray-800"
+                className="px-0 w-full text-sm text-gray-900 border-0 focus:ring-dark focus:outline-none"
                 placeholder="Write a comment..."
                 required
-              ></textarea>
+              />
             </div>
             <button
               type="submit"
