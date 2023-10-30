@@ -38,13 +38,13 @@ export default function FAQAccordian() {
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight">
             How to use this recipe app?
           </h2>
-          <p className="mt-1 text-blue-600 ">
+          <p className="mt-1 dark:text-white">
             A step-by-step guide on using this app
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="hs-accordion-group">{faqElements}</div>
+          <div className="hs-accordion-group ">{faqElements}</div>
         </div>
       </div>
     </>

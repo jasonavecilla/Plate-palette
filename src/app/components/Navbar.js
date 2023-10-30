@@ -2,18 +2,18 @@
 
 import React from "react";
 import { useState } from "react";
-import logo from "../../../public/assets/logo.svg"
-import menu from "../../../public/assets/menu.svg"
-import menuClose from "../../../public/assets/menu-close.svg"
+import logo from "../../../public/assets/logo.svg";
+import menu from "../../../public/assets/menu.svg";
+import menuClose from "../../../public/assets/menu-close.svg";
 import Image from "next/image";
-
-
+import DarkMode from "./DarkMode";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  
 
   return (
-    <nav className=" sticky top-0 z-50 w-full bg-white  ">
+    <nav className="sticky top-0 z-50 w-full">
       <div className="justify-between px-4 mx-auto  md:items-center md:flex md:px-8 pb-9 pt-5 ">
         <div>
           <div className="flex items-center justify-between">
@@ -42,22 +42,25 @@ export default function NavBar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-Brown hover:text-black font-medium text-base">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/">HOME</a>
               </li>
-              <li className="text-Brown hover:text-black font-medium text-base">
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/recipe">RECIPE</a>
               </li>
-              <li className="text-Brown hover:text-black font-medium text-base">
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/about">ABOUT US</a>
               </li>
-              <li className="text-Brown hover:text-black font-medium text-base">
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/contact">CONTACT US</a>
               </li>
-              <li className="text-Brown hover:text-black font-medium text-base">
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/blog">BLOG</a>
               </li>
+              <div className="flex space-x-4 mt-2">
+                <DarkMode />
+              </div>
             </ul>
           </div>
         </div>

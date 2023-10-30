@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.dark {
+  background-color: rgb(49, 47, 47);
+  color: white;
+}
+
+.light {
+  background-color: #fff;
+  color: rgb(10, 10, 10);
+}
+
+.theme {
+  transition: 1s all ease;
+}
+
 @layer base {
   .font-outline-2 {
     -webkit-text-stroke: 0.2px black;
@@ -14,7 +28,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #FFFFDD !important;
+  background-color: #ffffdd !important;
 }
 
 .img-overlay {
@@ -22,7 +36,7 @@
 }
 
 .rounded-checkbox {
-  width:35px;
+  width: 35px;
   height: 35px;
   border-radius: 50%;
   vertical-align: middle;
