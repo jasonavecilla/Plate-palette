@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
+import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -21,9 +22,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" type="image/x-icon" href="/public/assets/logo.svg" />
       </head>
       <body className={inter.className}>
-        <NavBar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <NavBar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
     <section className="mb-20">
-      <div className="relative isolate bg-white">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 lg:grid-cols-2">
+      <div className="relative isolate">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
           <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
             <div className="lg:absolute lg:inset-0 lg:right-1/2">
               <img
@@ -16,14 +16,14 @@ export default function Contact() {
           <form
             action="#"
             method="POST"
-            className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-4"
+            className="px-6 pb-24 pt-20 sm:pb-32 lg:px-2 lg:py-4"
           >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="mb-10">
-                <h2 className="text-2xl font-bold tracking-tight text-dark-700">
+                <h2 className="text-2xl font-bold tracking-tight dark:text-white">
                   Feel free to reach out
                 </h2>
-                <p className="mt-6 text-md leading-8 text-dark-700 italic">
+                <p className="mt-6 text-md leading-8 dark:text-white italic">
                   Do not hesitate to contact us with any questions or feedback.
                   We are here to assist you with anything you need. Your input
                   matters to us.
@@ -33,7 +33,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-semibold leading-6 text-gray-900"
+                    className="block text-sm font-semibold leading-6 dark:text-white"
                   >
                     First name
                   </label>
@@ -50,7 +50,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-semibold leading-6 text-dark-700"
+                    className="block text-sm font-semibold leading-6 dark:text-white"
                   >
                     Last name
                   </label>
@@ -60,14 +60,14 @@ export default function Contact() {
                       name="last-name"
                       id="last-name"
                       autoComplete="family-name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-dark-700 shadow-sm ring-1 ring-inset ring-dark-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellowgreen-500 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-semibold leading-6 text-dark-700"
+                    className="block text-sm font-semibold leading-6 dark:text-white"
                   >
                     Email
                   </label>
@@ -84,7 +84,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="phone-number"
-                    className="block text-sm font-semibold leading-6 text-dark-700"
+                    className="block text-sm font-semibold leading-6 dark:text-white"
                   >
                     Phone number
                   </label>
@@ -101,7 +101,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="message"
-                    className="block text-sm font-semibold leading-6 text-dark-700"
+                    className="block text-sm font-semibold leading-6 dark:text-white"
                   >
                     Message
                   </label>

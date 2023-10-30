@@ -69,7 +69,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
   };
 
   return (
-    <div className="bg-white -mt-10 ">
+    <div className="-mt-10 ">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>
@@ -146,7 +146,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
                   name="text"
                   type="text"
                   required
-                  className="w-[95%] rounded-md border border-dark-400 bg-white px-3.5 py-1 pl-10 text-dark-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+                  className="w-[95%] rounded-md border border-dark-400 bg-white px-3.5 py-2 pl-10 text-dark-700 shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
                   placeholder="Search"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
@@ -168,7 +168,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
                 <div>
-                  <Menu.Button className="group inline-flex justify-center text-md font-medium bg-yellowgreen py-1 pl-4 pr-2 rounded-md text-dark hover:text-gray-900">
+                  <Menu.Button className="group inline-flex justify-center text-md font-medium bg-yellowgreen py-2 pl-4 pr-2 rounded-md text-dark hover:text-gray-900">
                     Sort
                     <ChevronDownIcon
                       className="ml-1 h-6 w-6 flex-shrink-0 text-dark-400 group-hover:text-gray-500"

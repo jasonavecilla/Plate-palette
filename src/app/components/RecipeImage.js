@@ -1,3 +1,4 @@
+
 const mockData2 = [
   {
     id: "n1",
@@ -29,7 +30,43 @@ const mockData2 = [
   },
 ];
 
+import Image from "next/image";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
 export default function RecipeImage() {
+  const { mode } = useContext(ThemeContext);
+  const mockData2 = [
+    {
+      id: "n1",
+      author: "Michael Ford",
+      description:
+        "Spaghetti Aglio e Olio is a classic Italian pasta dish known for its simple yet incredibly flavorful preparation. It consists of al dente spaghetti noodles tossed with sautéed garlic, red pepper flakes, and extra virgin olive oil, creating a delectable and aromatic combination that's both quick to make and a true taste of Italy.",
+      image:
+        "https://images.unsplash.com/photo-1673442635965-34f1b36d8944?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Spaghetti Aglio e Olio",
+      serves: 2,
+      difficulty: "Easy",
+      ingredients: [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/2 teaspoon red pepper flakes (adjust to taste)",
+        "1/4 cup extra-virgin olive oil",
+        "Salt, to taste",
+        "Freshly ground black pepper, to taste",
+        "2 tablespoons fresh parsley, chopped",
+        "Grated parmesan cheese for garnish (optional)",
+      ],
+      procedure: [
+        "Cook the spaghetti in a large pot of salted boiling water according to package instructions until al dente. Drain and set aside.",
+        "While the pasta is cooking, heat the olive oil in a large skillet over low heat. Add the sliced garlic and red pepper flakes. Cook, stirring occasionally, until the garlic turns golden brown. Be careful not to burn the garlic, as it can become bitter.",
+        "Add the cooked and drained spaghetti to the skillet with the garlic and oil. Toss to coat the pasta with the infused oil. Season with salt and black pepper to taste.",
+        "Remove from heat and garnish with chopped fresh parsley. You can also sprinkle some grated parmesan cheese on top if desired.",
+        "Serve immediately and enjoy!",
+      ],
+    },
+  ];
+
 
   return (
     <section className="container mx-auto px-12 mt-10">
@@ -68,7 +105,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -89,7 +126,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -109,7 +146,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#000000"
+                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -130,7 +167,6 @@ export default function RecipeImage() {
             </p>
           </div>
         </div>
-
       </div>
     </section>
   );
