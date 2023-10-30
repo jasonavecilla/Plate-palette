@@ -8,7 +8,7 @@ export default function Contact() {
               <img
                 className="h-60 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
                 src="https://images.unsplash.com/photo-1563865436874-9aef32095fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHJlY2lwZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
+                alt="food in bowls"
               />
             </div>
           </div>
