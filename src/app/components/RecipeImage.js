@@ -1,3 +1,35 @@
+
+const mockData2 = [
+  {
+    id: "n1",
+    author: "Michael Ford",
+    description:
+      "Spaghetti Aglio e Olio is a classic Italian pasta dish known for its simple yet incredibly flavorful preparation. It consists of al dente spaghetti noodles tossed with sautéed garlic, red pepper flakes, and extra virgin olive oil, creating a delectable and aromatic combination that's both quick to make and a true taste of Italy.",
+    image:
+      "https://images.unsplash.com/photo-1673442635965-34f1b36d8944?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    name: "Spaghetti Aglio e Olio",
+    serves: 2,
+    difficulty: "Easy",
+    ingredients: [
+      "200g spaghetti",
+      "4 cloves garlic, thinly sliced",
+      "1/2 teaspoon red pepper flakes (adjust to taste)",
+      "1/4 cup extra-virgin olive oil",
+      "Salt, to taste",
+      "Freshly ground black pepper, to taste",
+      "2 tablespoons fresh parsley, chopped",
+      "Grated parmesan cheese for garnish (optional)",
+    ],
+    procedure: [
+      "Cook the spaghetti in a large pot of salted boiling water according to package instructions until al dente. Drain and set aside.",
+      "While the pasta is cooking, heat the olive oil in a large skillet over low heat. Add the sliced garlic and red pepper flakes. Cook, stirring occasionally, until the garlic turns golden brown. Be careful not to burn the garlic, as it can become bitter.",
+      "Add the cooked and drained spaghetti to the skillet with the garlic and oil. Toss to coat the pasta with the infused oil. Season with salt and black pepper to taste.",
+      "Remove from heat and garnish with chopped fresh parsley. You can also sprinkle some grated parmesan cheese on top if desired.",
+      "Serve immediately and enjoy!",
+    ],
+  },
+];
+
 import Image from "next/image";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
@@ -35,34 +67,37 @@ export default function RecipeImage() {
     },
   ];
 
-  
+
   return (
-    <section className='container mx-auto px-12 mt-10'>
+    <section className="container mx-auto px-12 mt-10">
       <div className="flex flex-col md:flex-row md:gap-x-10">
+
         {/* Image */}
         <div className="w-full h-full">
             <img
               src={mockData2[0].image}
               className="w-full p-5 md:p-0 md:h-[370px] bg-cover drop-shadow-md rounded-lg"
+              alt="spaghetti"
             />
         </div>
+
         {/* Text */}
         <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full">
-          <div className="">
-            {/* Title Name */}
-            <p className="font-bold text-xl  "> {mockData2[0].name} </p>
+          {/* Title Name */}
+          <div> 
+            <p className="font-bold text-xl"> 
+              {mockData2[0].name} 
+            </p>
           </div>
           {/* Description */}
           <div className="p-2">
-            <p className="font-base text-md ">
-              {" "}
-              {mockData2[0].description}{" "}
+            <p className="font-base text-md">
+              {mockData2[0].description}
             </p>
-            <p></p>
           </div>
           {/* Icons */}
           <div className="flex md:flex-row md:gap-x-56 md:pl-5 md:divide-x justify-center items-center">
-            <div className="">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-clock-exclamation"
@@ -124,9 +159,8 @@ export default function RecipeImage() {
               </svg>
               <p className="font-sans-serif text-2xl">20 mins</p>
             </div>
-
-            <p></p>
           </div>
+          {/* Author */}
           <div>
             <p className="font-sans-serif text-md font-md md:pt-6 md:pb-3">
               Created by {mockData2[0].author}

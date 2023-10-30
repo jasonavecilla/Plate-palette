@@ -1,42 +1,44 @@
 import React, { useState } from "react";
 import RecipeCard from "./RecipeCard";
 
-const SuggestedRecipe = ({ recipes, loading, error }) => {
-  const imageUrls = [
-    "https://www.ambitiouskitchen.com/wp-content/uploads/fly-images/27298/Monique-Turkey-Sloppy-Joes-1-500x375-c.jpg",
-    "https://sweetpeaskitchen.com/wp-content/uploads/2010/10/Easy-Classic-Brown-Sugar-Meatloaf-og.jpg",
-    "https://getinspiredeveryday.com/wp-content/uploads/2022/01/Slow-Cooker-Pot-Roast-Get-Inspired-Everyday-4.jpg",
-    "https://www.thekitchenmagpie.com/wp-content/uploads/images/2023/05/parmesancrustedtilapiamakelandscape-1200x800.jpg",
-    "https://recipes.net/wp-content/uploads/portal_files/recipes_net_posts/2020-12/5-ingredient-baked-chicken-teriyaki-recipe.jpeg",
-    "https://sparkpeo.hs.llnwd.net/e1/resize/630m620/e4/nw/3/2/l328452833.jpg",
-  ];
+const imageUrls = [
+  "https://www.ambitiouskitchen.com/wp-content/uploads/fly-images/27298/Monique-Turkey-Sloppy-Joes-1-500x375-c.jpg",
+  "https://sweetpeaskitchen.com/wp-content/uploads/2010/10/Easy-Classic-Brown-Sugar-Meatloaf-og.jpg",
+  "https://getinspiredeveryday.com/wp-content/uploads/2022/01/Slow-Cooker-Pot-Roast-Get-Inspired-Everyday-4.jpg",
+  "https://www.thekitchenmagpie.com/wp-content/uploads/images/2023/05/parmesancrustedtilapiamakelandscape-1200x800.jpg",
+  "https://recipes.net/wp-content/uploads/portal_files/recipes_net_posts/2020-12/5-ingredient-baked-chicken-teriyaki-recipe.jpeg",
+  "https://sparkpeo.hs.llnwd.net/e1/resize/630m620/e4/nw/3/2/l328452833.jpg",
+];
 
-  const titles = [
-    "Turkey Sloppy Joes",
-    "Brown Sugar Meatloaf",
-    "Slow Cooker Pot Roast",
-    "Broiled Tilapia Parmasean",
-    "Baked Teriyaki Chicken",
-    "Zesty Slow Cooker Chicken",
-  ];
+const titles = [
+  "Turkey Sloppy Joes",
+  "Brown Sugar Meatloaf",
+  "Slow Cooker Pot Roast",
+  "Broiled Tilapia Parmasean",
+  "Baked Teriyaki Chicken",
+  "Zesty Slow Cooker Chicken",
+];
 
-  const ratings = [
-    "5.0(24)",
-    "3.0(94)",
-    "4.2(29)",
-    "5.0(24)",
-    "3.0(94)",
-    "4.2(29)",
-  ];
+const ratings = [
+  "5.0(24)",
+  "3.0(94)",
+  "4.2(29)",
+  "5.0(24)",
+  "3.0(94)",
+  "4.2(29)",
+];
 
-  const authors = [
-    "John Doe",
-    "Jane Fritz",
-    "Adam Lander",
-    "John Doe",
-    "Jane Fritz",
-    "Adam Lander",
-  ];
+const authors = [
+  "John Doe",
+  "Jane Fritz",
+  "Adam Lander",
+  "John Doe",
+  "Jane Fritz",
+  "Adam Lander",
+];
+
+export default function SuggestedRecipe({ recipes }) {
+
   const [heartClicks, setHeartClicks] = useState(
     Array(imageUrls.length).fill(false)
   );
@@ -72,11 +74,17 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
             ></i>
           </div>
           <div className="mt-[10px]">
+            <h3 className="font-medium mb-5">
+              {titles[index]}
+            </h3>
+            <div className="flex justify-between text-xs text-dark-600">
             <h3 className="font-medium mb-5">{titles[index]}</h3>
             <div className="flex justify-between text-xs dark:text-white">
               <div className="flex items-center">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
-                <span>{ratings[index]}</span>
+                <span>
+                  {ratings[index]}
+                </span>
               </div>
             </div>
           </div>
@@ -99,4 +107,4 @@ const SuggestedRecipe = ({ recipes, loading, error }) => {
   );
 };
 
-export default SuggestedRecipe;
+
