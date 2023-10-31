@@ -16,7 +16,7 @@ export default function BlogHero() {
             Vegetarian pho is a Vietnamese noodle soup that offers a plant-based twist on the classic beef pho. It features a flavorful and aromatic vegetable broth infused with traditional pho spices like star anise and cinnamon. The soup is served with rice noodles, and it's generously topped with
             an assortment of fresh vegetables, tofu, and herbs.
           </p>
-          <div className='flex justify-between'>
+          <div className='flex justify-between items-center'>
             <div className='flex items-center gap-3'>
               <div
                 className='w-12 h-12 rounded-full bg-center bg-cover'
@@ -30,8 +30,11 @@ export default function BlogHero() {
               </div>
             </div>
             <div className='flex items-center gap-2'>
-              <div>
+              <div className='w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer'>
                 <i className='fa-solid fa-share-nodes'></i>
+              </div>
+              <div className='w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer'>
+                <i className='fa-solid fa-bookmark'></i>
               </div>
             </div>
           </div>
