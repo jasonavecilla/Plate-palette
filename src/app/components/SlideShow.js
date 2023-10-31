@@ -45,11 +45,11 @@ export default function SlideShow() {
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className=" mix-blend-darken bg-opacity-40 bg-gray-700 ">
-                <div className="absolute inset-x-[1%] inset-y-[8%] md:inset-x-[10%] md:inset-y-[20%] text-white flex flex-col">
-                  <p className=" text-center  text-6xl md:text-4xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase p-2 md:p-0">
+                <div className="w-full h-full absolute justify-center items-center md:items-center md:justify-center text-white flex flex-col mx-auto  ">
+                  <p className=" text-center  text-5xl md:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase banner md:p-0">
                     Unleash Your Inner Chef
                   </p>
-                  <p className="p-5 md:p-0 text-lg md:text-xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] font-sans-serif font-medium text-center flex items-end justify-center">
+                  <p className="text-sm md:text-2xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)] font-sans-serif font-medium banner text-center flex items-end justify-center">
                     Where passion meets the plate, our cooking website inspires
                     every chef within you. Discover a world of delectable
                     recipes, culinary tips, and food adventures to savor.
