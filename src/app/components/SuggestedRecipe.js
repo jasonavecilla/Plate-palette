@@ -38,7 +38,6 @@ const authors = [
 ];
 
 export default function SuggestedRecipe({ recipes }) {
-
   const [heartClicks, setHeartClicks] = useState(
     Array(imageUrls.length).fill(false)
   );
@@ -74,17 +73,11 @@ export default function SuggestedRecipe({ recipes }) {
             ></i>
           </div>
           <div className="mt-[10px]">
-            <h3 className="font-medium mb-5">
-              {titles[index]}
-            </h3>
-            <div className="flex justify-between text-xs text-dark-600">
             <h3 className="font-medium mb-5">{titles[index]}</h3>
-            <div className="flex justify-between text-xs dark:text-white">
+            <div className="flex justify-between text-xs text-dark-600">
               <div className="flex items-center">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
-                <span>
-                  {ratings[index]}
-                </span>
+                <span>{ratings[index]}</span>
               </div>
             </div>
           </div>
@@ -94,17 +87,15 @@ export default function SuggestedRecipe({ recipes }) {
   };
 
   return (
-    <>
-      <section className="container mx-auto px-6 max-w-7xl my-20">
-        <h1 className="text-center font-bold text-3xl">Discover Culinary Inspiration</h1>
-        <div className="container mx-auto px-4 max-w-7xl mt-20">
-          <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
-            {generateGridItems()}
-          </div>
+    <section className="container mx-auto px-6 max-w-7xl my-20">
+      <h1 className="text-center font-bold text-3xl">
+        Discover Culinary Inspiration
+      </h1>
+      <div className="container mx-auto px-4 max-w-7xl mt-20">
+        <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
+          {generateGridItems()}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
-};
-
-
+}

@@ -63,30 +63,25 @@ function CheckboxList({ instructions }) {
             {items.map((item, index) => (
               <div key={item.id}>
                 <div className="flex p-5 md:pl-10 pt-5 flex-row gap-x-2 md:gap-x-8">
-                  {/* Checkbox*/}
+                  {/* Checkbox */}
                   <label>
-                    <input 
-                      type="checkbox" 
-                      className="form-checkbox bg-blue border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500" 
-                      checked={item.checked} 
-                      onChange={() => handleCheckboxChange(item.id)} 
+                    <input
+                      type="checkbox"
+                      className="form-checkbox bg-blue-500 border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500"
+                      checked={item.checked}
+                      onChange={() => handleCheckboxChange(item.id)}
                     />
                   </label>
 
                   {/* Procedure */}
-                  <div className={item.checked ? "text-gray-400" : "text-gray-900"}>
+                  <div className="dark:text-white">
                     <div>
-                      <h1 className="text-md font-medium mb-2"> 
-                        STEP {index + 1} 
+                      <h1 className="text-md font-medium mb-2">
+                        STEP {index + 1}
                       </h1>
-                      <p className="text-sm mt-2 leading-relaxed"> 
-                        {item.label} 
+                      <p className="text-sm mt-2 leading-relaxed">
+                        {item.label}
                       </p>
-                  {/* PROCEDURES */}
-                  <div>
-                    <div className='dark:text-white'>
-                      <h1 className='text-md font-medium mb-2 dark:text-white'>STEP {index + 1} </h1>
-                      <p className='text-sm mt-2 leading-relaxed dark:text-white'>{item.label}</p>
                     </div>
                   </div>
                 </div>
@@ -100,20 +95,10 @@ function CheckboxList({ instructions }) {
         <div className="md:order-last order-first">
           {/* Ingredients Part */}
           <div>
-
             <h1 className="md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-xl mb-5">Ingredients</h1>
             <ul className="p-5 text-base md:text-md">
               {mockData[0].ingredients.map((ingredient, index) => (
-                <li 
-                  className="text-dark font-light" 
-                  key={index}
-                >
-
-            <h1 className='md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-xl mb-5'>Ingredients</h1>
-            <ul className='p-5 text-base md:text-md'>
-              {mockData[0].ingredients.map((ingredient, index) => (
-                <li className='dark:text-white font-light' key={index}>
-
+                <li className="dark:text-white font-light" key={index}>
                   {ingredient}
                   <hr className="h-0.5 my-5 pl-20 bg-gray-300 border-0"></hr>
                 </li>
@@ -121,12 +106,10 @@ function CheckboxList({ instructions }) {
             </ul>
           </div>
 
-          {/* Nutrition Part */}
           <div className="px-5">
             <NutritionRecipeMain />
           </div>
         </div>
-
       </div>
     </section>
   );
@@ -140,4 +123,3 @@ export default function RecipeBlock() {
     </div>
   );
 }
-
