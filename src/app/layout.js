@@ -13,13 +13,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <head>
-        <script
-          src="https://kit.fontawesome.com/bafe0bdc31.js"
-          crossOrigin="anonymous"
-        ></script>
-        <link rel="icon" type="image/x-icon" href="/public/assets/logo.svg" />
+        <script src='https://kit.fontawesome.com/bafe0bdc31.js' crossorigin='anonymous'></script>
+        <link rel='icon' type='image/x-icon' href='/public/assets/logo.svg' />
       </head>
       <body className={inter.className}>
         <ThemeProvider>
