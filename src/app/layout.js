@@ -16,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <script src='https://kit.fontawesome.com/bafe0bdc31.js' crossorigin='anonymous'></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' />
         <link rel='icon' type='image/x-icon' href='/public/assets/logo.svg' />
       </head>
       <body className={inter.className}>
