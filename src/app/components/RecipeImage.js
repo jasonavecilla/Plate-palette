@@ -100,15 +100,15 @@ export default function RecipeImage() {
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-clock-exclamation"
+                className="icon icon-tabler icon-tabler-clock-exclamation"
                 width="30"
                 height="30"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M20.986 12.502a9 9 0 1 0 -5.973 7.98" />
@@ -121,15 +121,15 @@ export default function RecipeImage() {
             <div className="px-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-clock-check"
+                className="icon icon-tabler icon-tabler-clock-check"
                 width="30"
                 height="30"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M20.942 13.021a9 9 0 1 0 -9.407 7.967" />
@@ -141,15 +141,15 @@ export default function RecipeImage() {
             <div className="px-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-users"
+                className="icon icon-tabler icon-tabler-users"
                 width="30"
                 height="30"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
