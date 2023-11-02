@@ -68,7 +68,7 @@ export default function RecipeImage() {
 
   return (
     <section className="container mx-auto px-5 mt-10   ">
-      <div className="  flex-col md:flex-row md:gap-x-10 flex  ">
+      <div className=" pl-0 md:pl-10 flex-col md:flex-row md:gap-x-10 flex  ">
         {/* Image */}
         <div className=" xs:w-full lg:w-1/2  md:w-1/2 flex flex-shrink-0">
           <img
