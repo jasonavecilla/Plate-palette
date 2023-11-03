@@ -1,4 +1,3 @@
-
 const mockData2 = [
   {
     id: "n1",
@@ -67,37 +66,31 @@ export default function RecipeImage() {
     },
   ];
 
-
   return (
-    <section className="container mx-auto px-12 mt-10">
-      <div className="flex flex-col md:flex-row md:gap-x-10">
-
+    <section className="container mx-auto px-5 mt-10   ">
+      <div className=" pl-0 md:pl-10 flex-col md:flex-row md:gap-x-10 flex  ">
         {/* Image */}
-        <div className="w-full h-full">
-            <img
-              src={mockData2[0].image}
-              className="w-full p-5 md:p-0 md:h-[370px] bg-cover drop-shadow-md rounded-lg"
-              alt="spaghetti"
-            />
+        <div className=" xs:w-full lg:w-1/2  md:w-1/2 flex flex-shrink-0">
+          <img
+            src={mockData2[0].image}
+            className=" bg-cover "
+            alt="spaghetti"
+          />
         </div>
 
         {/* Text */}
-        <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full">
+        <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full max-w-lg ">
           {/* Title Name */}
-          <div> 
-            <p className="font-bold text-xl"> 
-              {mockData2[0].name} 
-            </p>
+          <div>
+            <p className="font-bold text-xl">{mockData2[0].name}</p>
           </div>
           {/* Description */}
-          <div className="p-2">
-            <p className="font-base text-md">
-              {mockData2[0].description}
-            </p>
+          <div className=" banner ">
+            <p className="font-base text-md  ">{mockData2[0].description}</p>
           </div>
           {/* Icons */}
-          <div className="flex md:flex-row md:gap-x-56 md:pl-5 md:divide-x justify-center items-center">
-            <div>
+          <div className="flex md:flex-row md:gap-x-24 md:pl-5 md:divide-x justify-center items-center p-5 max-w-lg">
+            <div className="flex flex-col justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-clock-exclamation"
@@ -105,7 +98,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
+                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -116,9 +109,17 @@ export default function RecipeImage() {
                 <path d="M19 16v3" />
                 <path d="M19 22v.01" />
               </svg>
-              <p className="font-sans-serif text-2xl">20 mins</p>
+
+              <div className="gap-y-10 whitespace-nowrap">
+                <p className="font-sans-serif font-medium text-lg  text-center">
+                  Active Time
+                </p>
+                <p className="font-sans-serif text-base  text-center">
+                  20 mins
+                </p>
+              </div>
             </div>
-            <div className="px-5">
+            <div className="px-5 flex flex-col justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-clock-check"
@@ -126,7 +127,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
+                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -136,9 +137,16 @@ export default function RecipeImage() {
                 <path d="M12 7v5l3 3" />
                 <path d="M15 19l2 2l4 -4" />
               </svg>
-              <p className="font-sans-serif text-2xl">20 mins</p>
+              <div className="gap-y-10 whitespace-nowrap">
+                <p className="font-sans-serif font-medium text-lg  text-center">
+                  Total Time
+                </p>
+                <p className="font-sans-serif text-base  text-center">
+                  20 mins
+                </p>
+              </div>
             </div>
-            <div className="px-5">
+            <div className="px-5 flex flex-col justify-center items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-users"
@@ -146,7 +154,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === 'dark' ? '#FFFFFF' : '#000000'}
+                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -157,7 +165,12 @@ export default function RecipeImage() {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
               </svg>
-              <p className="font-sans-serif text-2xl">20 mins</p>
+              <div className="gap-y-10 whitespace-nowrap">
+                <p className="font-sans-serif font-medium text-lg  text-center">
+                  Serving
+                </p>
+                <p className="font-sans-serif text-base  text-center">4</p>
+              </div>
             </div>
           </div>
           {/* Author */}
