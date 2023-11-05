@@ -19,38 +19,41 @@
   </ol>
 </details>
 
-
 <h2 id="about">I. About the Project</h2>
 <p>The Plate Palette is a dynamic and user-friendly web application that's been developed as part of our project during our journey in Chingu Tier 2: Frontend Framework & API Usage. This project showcases our collective efforts, learning, and commitment to building a feature-rich application using a variety of cutting-edge technologies.</p>
 
 ## Key Features:
 
 ### Landing Page
+
 - **Header Component**: A welcoming message greets users and sets the stage for their culinary adventure.
 - **Search Field**: Users can input one or multiple ingredients to search for recipes.
 - **Application Guide Component**: An intuitive guide explains how to make the best use of the application.
 
 ### Scrollable Recipe List
+
 - The app offers access to over 1500 recipes from a comprehensive database.
 - Results are presented in a scrollable list, with 20 recipes per page, ensuring a user-friendly experience.
 
 ### Main Recipe Component
+
 - Each recipe in the search results is displayed with an enticing image, recipe name, and a link to access detailed information.
 
 ### Detailed Recipe Component
+
 - Delve into the details of a selected recipe, including its name, category, and step-by-step instructions.
 - Additional information includes nutrition facts and a convenient link to an instructional video.
 
 ### Mobile Responsiveness
+
 - The app is designed to work seamlessly on mobile devices, providing users with the flexibility to access it from any location.
 
 ### Search Component
+
 - Users can input ingredients and initiate searches easily.
 - Error messages are displayed when an unlisted ingredient is entered, ensuring a smooth experience.
 
 <h2 id="languages">II. Languages and Tools Used</h2>
-
-## Technologies Used
 
 - **Next.js**: The application is built using Next.js for server-side rendering and improved performance.
 - **React.js**: React is used for building the user interface, making it dynamic and interactive.
@@ -61,7 +64,6 @@
 - **Axios**: Axios is used for making HTTP requests to fetch recipe data from external sources.
 - **Heroicons**: Heroicons provides a collection of icons for user interface elements.
 - **Figma**: Figma is used for designing and prototyping the user interface, contributing to a visually pleasing user experience.
-
 
 <h2 id="developers">III. Developers</h2>
 <a href="https://github.com/johncarlolipa"><img src="https://img.shields.io/badge/johncarlolipa-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a>
@@ -88,7 +90,6 @@ Typography
 
 _Below is an example of how you can install and setup the application on your device._
 
-## How to Use
 
 To set up and run the Recipe App locally, follow these steps:
 
@@ -123,3 +124,11 @@ Feel free to explore, search for your favorite recipes, and enjoy your culinary 
 If you encounter any issues or have suggestions for improvements, please don't hesitate to create a GitHub issue or reach out to us.
 
 Happy cooking! 🍳🍽️
+
+<h2 id="pages">VII. Pages</h2>
+
+- <a href="#">Homepage</a>
+- <a href="#">Recipe Page</a>
+- <a href="#">Blog Page</a>
+- <a href="#">About Page</a>
+- <a href="#">Contact Page</a>
