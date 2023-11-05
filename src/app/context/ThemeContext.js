@@ -1,13 +1,11 @@
-"use client";
+"use client"
 
 import { createContext, useState, useEffect } from "react";
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [mode, setMode] = useState(
-    localStorage.getItem("themeMode") || "light"
-  );
+  const [mode, setMode] = useState("light"); // Default to "light" if localStorage is not available
 
   const toggle = () => {
     const newMode = mode === "dark" ? "light" : "dark";
@@ -16,8 +14,12 @@ export const ThemeProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    if (localStorage.getItem("themeMode")) {
-      setMode(localStorage.getItem("themeMode"));
+    if (typeof localStorage !== "undefined") {
+      // Check if localStorage is available (client side)
+      const storedMode = localStorage.getItem("themeMode");
+      if (storedMode) {
+        setMode(storedMode);
+      }
     }
   }, []);
 
