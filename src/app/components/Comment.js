@@ -33,11 +33,11 @@ const commentData = [
 export default function Comment() {
   return (
     <section className="my-10">
-      <h1 className="text-center font-bold text-2xl">Join the Conversation</h1>
+      <h1 className="text-center font-bold text-3xl">Join the Conversation</h1>
       <div className="dark:bg-gray-900 py-8 lg:py-16 antialiased">
         <div className="max-w-2xl mx-auto px-4">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-lg lg:text-lg font-bold dark:text-white md:pl-0 pl-4">
+            <h2 className="text-lg lg:text-2xl font-bold dark:text-white md:pl-0 pl-4">
               Discussion ({commentData.length})
             </h2>
           </div>
@@ -74,10 +74,14 @@ export default function Comment() {
                     />
                     {comment.name}
                   </p>
-                  <p className="text-sm dark:text-white">{comment.dateTime}</p>
+                  <p className="text-sm dark:text-white">
+                    {comment.dateTime}
+                  </p>
                 </div>
               </footer>
-              <p className="dark:text-white text-sm">{comment.content}</p>
+              <p className="dark:text-white">
+                {comment.content}
+              </p>
 
               <div className="flex items-center mt-4 space-x-4">
                 <button
