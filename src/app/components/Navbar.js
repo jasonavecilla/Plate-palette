@@ -10,7 +10,6 @@ import DarkMode from "./DarkMode";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
-  
 
   return (
     <nav className="sticky top-0 z-50 w-full">
@@ -24,7 +23,7 @@ export default function NavBar() {
             </a>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2  rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
@@ -50,14 +49,15 @@ export default function NavBar() {
                 <a href="/recipe">RECIPE</a>
               </li>
               <li className="text-Brown font-medium hover:text-blue-300 text-base">
+                <a href="/blog">BLOG</a>
+              </li>
+              <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/about">ABOUT US</a>
               </li>
               <li className="text-Brown font-medium hover:text-blue-300 text-base">
                 <a href="/contact">CONTACT US</a>
               </li>
-              <li className="text-Brown font-medium hover:text-blue-300 text-base">
-                <a href="/blog">BLOG</a>
-              </li>
+
               <div className="flex space-x-4 mt-2">
                 <DarkMode />
               </div>

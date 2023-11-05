@@ -18,6 +18,7 @@
   transition: 1s all ease;
 }
 
+
 @layer base {
   .font-outline-2 {
     -webkit-text-stroke: 0.2px black;
