@@ -85,8 +85,10 @@ export default function RecipeImage() {
             <p className="font-bold text-xl">{mockData2[0].name}</p>
           </div>
           {/* Description */}
-          <div className=" banner ">
-            <p className="font-base text-md  ">{mockData2[0].description}</p>
+          <div className="  ">
+            <p className="font-base text-sm banner  ">
+              {mockData2[0].description}
+            </p>
           </div>
           {/* Icons */}
           <div className="flex md:flex-row md:gap-x-24 md:pl-5 md:divide-x justify-center items-center p-5 max-w-lg">
@@ -111,12 +113,10 @@ export default function RecipeImage() {
               </svg>
 
               <div className="gap-y-10 whitespace-nowrap">
-                <p className="font-sans-serif font-medium text-lg  text-center">
+                <p className="font-sans-serif font-medium text-sm  text-center">
                   Active Time
                 </p>
-                <p className="font-sans-serif text-base  text-center">
-                  20 mins
-                </p>
+                <p className="font-sans-serif text-sm  text-center">20 mins</p>
               </div>
             </div>
             <div className="px-5 flex flex-col justify-center items-center">
@@ -138,12 +138,10 @@ export default function RecipeImage() {
                 <path d="M15 19l2 2l4 -4" />
               </svg>
               <div className="gap-y-10 whitespace-nowrap">
-                <p className="font-sans-serif font-medium text-lg  text-center">
+                <p className="font-sans-serif font-medium text-sm  text-center">
                   Total Time
                 </p>
-                <p className="font-sans-serif text-base  text-center">
-                  20 mins
-                </p>
+                <p className="font-sans-serif text-sm  text-center">20 mins</p>
               </div>
             </div>
             <div className="px-5 flex flex-col justify-center items-center">
@@ -166,16 +164,16 @@ export default function RecipeImage() {
                 <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
               </svg>
               <div className="gap-y-10 whitespace-nowrap">
-                <p className="font-sans-serif font-medium text-lg  text-center">
+                <p className="font-sans-serif font-medium text-sm  text-center">
                   Serving
                 </p>
-                <p className="font-sans-serif text-base  text-center">4</p>
+                <p className="font-sans-serif text-sm  text-center">4</p>
               </div>
             </div>
           </div>
           {/* Author */}
           <div>
-            <p className="font-sans-serif text-md font-md md:pt-6 md:pb-3">
+            <p className="font-sans-serif text-sm font-md md:pt-6 md:pb-3">
               Created by {mockData2[0].author}
             </p>
           </div>

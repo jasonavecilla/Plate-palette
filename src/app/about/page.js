@@ -43,10 +43,10 @@ export default function About() {
             <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32">
               <div className="mx-auto max-w-xl gap-x-10 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-lg lg:shrink-0 xl:max-w-lg">
-                  <h1 className="text-2xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-4xl">
+                  <h1 className="text-2xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-2xl">
                     We’re changing the way people prepare food.
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 dark:text-white sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-md leading-8 dark:text-white sm:max-w-md lg:max-w-none">
                     Our mission is to empower people to explore, create, and
                     enjoy delicious, homemade meals through our recipe app. We
                     are dedicated to providing a user-friendly platform that
@@ -113,19 +113,21 @@ export default function About() {
         {/* Values section */}
         <div className="mx-auto mt-32 max-w-5xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-3xl">
+            <h2 className="text-2xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-2xl">
               Our values
             </h2>
-            <p className="mt-6 text-lg leading-8 dark:text-white">
+            <p className="mt-6 text-md leading-8 dark:text-white">
               From everyday staples to exotic specialties, we offer a wide array
               of fresh, seasonal ingredients, inspiring your culinary creativity
               and guaranteeing you find the perfect components for your dishes.
             </p>
           </div>
-          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-sm leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             {values.map((value) => (
               <div key={value.name}>
-                <dt className="font-semibold text-yellowgreen-600">{value.name}</dt>
+                <dt className="font-semibold text-yellowgreen-600">
+                  {value.name}
+                </dt>
                 <dd className="mt-1 dark:text-white">{value.description}</dd>
               </div>
             ))}

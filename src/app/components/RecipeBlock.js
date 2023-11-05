@@ -54,10 +54,11 @@ function CheckboxList({ instructions }) {
   return (
     <section className="container mx-auto px-12 max-w-7xl mt-20">
       <div className="flex flex-col md:grid md:grid-cols-3 gap-x-10 px-5 md:px-2 gap-y-5 w-full h-full pb-2">
-
         {/* Procedure Part */}
         <div className="bg-gray-500 bg-opacity-10 md:order-first order-last col-span-2 w-full pb-20 pr-0 md:pr-10">
-          <h1 className="uppercase pt-10 md:pt-5 px-5 font-bold text-xl mb-5">How to make it</h1>
+          <h1 className="uppercase pt-10 md:pt-5 px-5 font-bold text-md mb-5">
+            How to make it
+          </h1>
 
           <div className="w-full">
             {items.map((item, index) => (
@@ -95,8 +96,10 @@ function CheckboxList({ instructions }) {
         <div className="md:order-last order-first">
           {/* Ingredients Part */}
           <div>
-            <h1 className="md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-xl mb-5">Ingredients</h1>
-            <ul className="p-5 text-base md:text-md">
+            <h1 className="md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-md mb-5">
+              Ingredients
+            </h1>
+            <ul className="p-5 text-base md:text-sm">
               {mockData[0].ingredients.map((ingredient, index) => (
                 <li className="dark:text-white font-light" key={index}>
                   {ingredient}

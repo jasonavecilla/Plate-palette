@@ -20,10 +20,10 @@ export default function Contact() {
           >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="mb-10">
-                <h2 className="text-2xl font-bold tracking-tight dark:text-white">
+                <h2 className="text-xl font-bold tracking-tight dark:text-white">
                   Feel free to reach out
                 </h2>
-                <p className="mt-6 text-md leading-8 dark:text-white italic">
+                <p className="mt-6 text-sm leading-8 dark:text-white italic">
                   Do not hesitate to contact us with any questions or feedback.
                   We are here to assist you with anything you need. Your input
                   matters to us.
