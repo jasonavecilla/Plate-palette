@@ -41,7 +41,7 @@ export default function Comment() {
               Discussion ({commentData.length})
             </h2>
           </div>
-          <form className="mb-6 md:px-0 px-4">
+          <form className="mb-6 md:px-0 px-4" id="form">
             <div className="py-2 px-4 mb-4 rounded-lg rounded-t-lg border border-gray-200 dark:border-gray-700">
               <label className="sr-only">Your comment</label>
               <textarea
