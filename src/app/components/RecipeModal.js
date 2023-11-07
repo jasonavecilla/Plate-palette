@@ -18,6 +18,28 @@ function RecipeModal({ recipe, rating, numReviews }) {
       >
         <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)]">
           <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-xl ">
+            {/* close button */}
+            <div className="flex justify-end items-center py-3 px-4 border-b">
+              <button 
+                type="button" 
+                className="flex justify-center items-center w-7 h-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"  data-hs-overlay={`#hs-scroll-inside-body-modal-${recipe.slug}`}>
+                <span className="sr-only">Close</span>
+                <svg 
+                  className="flex-shrink-0 w-4 h-4" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round">
+                  <path d="M18 6 6 18"/>
+                  <path d="m6 6 12 12"/>
+                </svg>
+              </button>
+            </div>
             <div className="p-4 overflow-y-auto">
               <div>
                 {/* image */}
@@ -49,7 +71,7 @@ function RecipeModal({ recipe, rating, numReviews }) {
                       height="30" 
                       viewBox="0 0 24 24" 
                       strokeWidth="2" 
-                      stroke="currentColor" 
+                      stroke="#000000" 
                       fill="none" 
                       strokeLinecap="round" 
                       strokeLinejoin="round">
@@ -57,7 +79,7 @@ function RecipeModal({ recipe, rating, numReviews }) {
                       <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
                       <path d="M12 7v5l3 3"></path>
                     </svg>
-                      <p>
+                      <p className="text-gray-800">
                         {recipe.total_time_minutes
                           ? recipe.total_time_minutes + " mins"
                           : "- mins"}{" "}
@@ -84,7 +106,7 @@ function RecipeModal({ recipe, rating, numReviews }) {
                       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                       <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
                     </svg>
-                      <p>Serves {recipe.num_servings}</p>
+                      <p className="text-gray-800">Serves {recipe.num_servings}</p>
                     </div>
                   </div>
                 </div>
@@ -92,7 +114,7 @@ function RecipeModal({ recipe, rating, numReviews }) {
                 <div className="flex  gap-2 flex-row justify-between">
                   <div className="flex flex-col gap-2">
                     {/* author */}
-                    <p className="text-sm">
+                    <p className="text-sm text-gray-800">
                       {recipe.credits[0].name
                         ? recipe.credits[0].name
                         : " anonymous"}
@@ -101,7 +123,7 @@ function RecipeModal({ recipe, rating, numReviews }) {
                     {/* star */}
                     <div className="flex  text-xs">
                       <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
-                      <p>
+                      <p className="text-gray-800">
                         {rating}({numReviews})
                       </p>
                     </div>
