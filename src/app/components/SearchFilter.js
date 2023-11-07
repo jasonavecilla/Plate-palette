@@ -60,7 +60,7 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
         }
       } catch (error) {
         console.error(error);
-        setError(error);
+        setError(error.message);
       } finally {
         setLoading(false);
         setQuery("");
