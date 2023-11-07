@@ -53,14 +53,14 @@ export default function SearchFilter({ setRecipes, setLoading, setError }) {
       try {
         const response = await axios.request(options);
         if (response.data.count === 0) {
-          setError(`Cannot find recipe with this ingredient ${query}`);
+          setError(`Cannot find recipe/s with this ingredient "${query}"`);
         } else {
           console.log(response.data);
           setRecipes(response.data.results);
         }
       } catch (error) {
         console.error(error);
-        setError(error);
+        setError(error.message);
       } finally {
         setLoading(false);
         setQuery("");
