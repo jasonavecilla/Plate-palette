@@ -112,11 +112,13 @@ const RecipeGrid = ({ recipes, loading, error }) => {
 
   return (
     <section className="container mx-auto px-4 max-w-5xl my-20">
-      {loading && <Spinner />}
-      {error && <p className="text-center font-semibold">{error}</p>}
+      {loading ?  <Spinner /> 
+      : error ? 
+      <p className="text-center font-semibold">{error}</p> 
+      :
       <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
         {generateGridItems()}
-      </div>
+      </div>}
     </section>
   );
 };
