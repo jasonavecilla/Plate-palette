@@ -100,13 +100,13 @@ To set up and run the Recipe App locally, follow these steps:
 1. Clone this repository to your local machine:
 
 ```
-git clone https://github.com/yourusername/recipe-app.git
+[git clone https://github.com/yourusername/recipe-app.git](https://github.com/chingu-voyages/v46-tier2-team-12.git)
 ```
 
 2. Change the directory to the project folder:
 
 ```
-cd recipe-app
+cd v46-tier2-team-12
 ```
 
 3. Install the project dependencies:
@@ -121,7 +121,7 @@ npm install
 npm run dev
 ```
 
-5. Open your web browser and visit `http://localhost:3000` to access the Recipe App.
+5. Open your web browser and visit `http://localhost:3000` to access the Plate Palette.
 
 Feel free to explore, search for your favorite recipes, and enjoy your culinary journey with the Recipe App!
 
