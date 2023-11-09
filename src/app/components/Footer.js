@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/assets/footer-logo.svg";
+import footerLogo from "../../../public/assets/footerLogo.svg";
 import facebook from "../../../public/assets/facebook.svg";
 
 const navigation = {
@@ -53,7 +53,7 @@ export default function Footer() {
   return (
     <footer className='bg-blue'>
       <div className='mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-12 lg:px-8'>
-        <Image src={logo} alt='logo' className='mx-auto' />
+        <Image src={footerLogo} alt='logo' className='mx-auto' />
         <nav className='-mb-9 mt-8 columns-2 sm:flex sm:justify-center sm:space-x-12' aria-label='Footer'>
           {navigation.main.map((item) => (
             <div key={item.name} className='pb-6'>
