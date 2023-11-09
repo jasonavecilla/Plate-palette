@@ -4,7 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import logo from "../../../public/assets/logo.svg";
-import footerLogo from "../../../public/assets/footerLogo.svg";
+import navbarLogo_dark from "../../../public/assets/navbarLogo_dark.svg";
 import menu from "../../../public/assets/menu.svg";
 import menuClose from "../../../public/assets/menu-close.svg";
 import Image from "next/image";
@@ -22,7 +22,7 @@ export default function NavBar() {
           <div className='flex items-center justify-between'>
             <a href='/'>
               <div className='flex flex-wrap drop-shadow-xl'>
-                <Image src={mode === "dark" ? footerLogo : logo} alt='Logo' />
+                <Image src={mode === "dark" ? navbarLogo_dark : logo} alt='Logo' />
               </div>
             </a>
             <div className='md:hidden'>
