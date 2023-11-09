@@ -52,61 +52,52 @@ function CheckboxList({ instructions }) {
   };
 
   return (
-    <section className="container mx-auto px-12 max-w-7xl mt-20">
-      <div className="flex flex-col md:grid md:grid-cols-3 gap-x-10 px-5 md:px-2 gap-y-5 w-full h-full pb-2">
-
+    //px-12 sa section
+    <section className='container mx-auto max-w-7xl mt-20'>
+      <div className='flex flex-col md:grid md:grid-cols-3 gap-x-10 px-5 md:px-2 gap-y-5 w-full h-full pb-2'>
         {/* Procedure Part */}
-        <div className="bg-gray-500 bg-opacity-10 md:order-first order-last col-span-2 w-full pb-20 pr-0 md:pr-10">
-          <h1 className="uppercase pt-10 md:pt-5 px-5 font-bold text-xl mb-5">How to make it</h1>
+        <div className='bg-gray-500 bg-opacity-10 md:order-first order-last col-span-2 w-full pb-20 pr-0 md:pr-10'>
+          <h1 className='uppercase pt-10 md:pt-5 px-5 font-bold text-xl mb-5'>How to make it</h1>
 
-          <div className="w-full">
+          <div className='w-full'>
             {items.map((item, index) => (
               <div key={item.id}>
-                <div className="flex p-5 md:pl-10 pt-5 flex-row gap-x-2 md:gap-x-8">
+                <div className='flex p-5 md:pl-10 pt-5 flex-row gap-x-2 md:gap-x-8'>
                   {/* Checkbox */}
                   <label>
-                    <input
-                      type="checkbox"
-                      className="form-checkbox bg-blue-500 border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500"
-                      checked={item.checked}
-                      onChange={() => handleCheckboxChange(item.id)}
-                    />
+                    <input type='checkbox' className='form-checkbox bg-blue-500 border-4 border-olive-300 ring-offset-purple-500 rounded-full h-6 w-6 text-blue-500' checked={item.checked} onChange={() => handleCheckboxChange(item.id)} />
                   </label>
 
                   {/* Procedure */}
-                  <div className="dark:text-white">
+                  <div className='dark:text-white'>
                     <div>
-                      <h1 className="text-md font-medium mb-2">
-                        STEP {index + 1}
-                      </h1>
-                      <p className="text-sm mt-2 leading-relaxed">
-                        {item.label}
-                      </p>
+                      <h1 className='text-md font-medium mb-2'>STEP {index + 1}</h1>
+                      <p className='text-sm mt-2 leading-relaxed'>{item.label}</p>
                     </div>
                   </div>
                 </div>
-                <hr className="h-0.5 my-5 bg-gray-300 border-0 rounded ml-10" />
+                <hr className='h-0.5 my-5 bg-gray-300 border-0 rounded ml-10' />
               </div>
             ))}
           </div>
         </div>
 
         {/* Ingredient and Nutrition Part */}
-        <div className="md:order-last order-first">
+        <div className='md:order-last order-first'>
           {/* Ingredients Part */}
-          <div>
-            <h1 className="md:px-5 px-5 uppercase pt-10 md:pt-5 font-bold text-xl mb-5">Ingredients</h1>
-            <ul className="p-5 text-base md:text-md">
+          <div className='px-5 mx-auto '>
+            <h1 className='uppercase pt-10 md:pt-5 font-bold text-xl mb-5'>Ingredients</h1>
+            <ul className='text-base md:text-md'>
               {mockData[0].ingredients.map((ingredient, index) => (
-                <li className="dark:text-white font-light" key={index}>
+                <li className='dark:text-white font-light' key={index}>
                   {ingredient}
-                  <hr className="h-0.5 my-5 pl-20 bg-gray-300 border-0"></hr>
+                  <hr className='h-0.5 my-5 pl-20 bg-gray-300 border-0'></hr>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="px-5">
+          <div className='px-5 mx-auto'>
             <NutritionRecipeMain />
           </div>
         </div>
