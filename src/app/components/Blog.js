@@ -62,7 +62,7 @@ function Blog() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 dark:text-white">
           {blogElements}
         </div>
       </div>

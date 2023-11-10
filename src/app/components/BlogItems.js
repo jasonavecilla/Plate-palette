@@ -83,7 +83,7 @@ function Blog() {
         {/* <!-- End Title --> */}
 
         {/* <!-- Grid --> */}
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-6'>{blogElements}</div>
+        <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-6 dark:text-white'>{blogElements}</div>
         {/* <!-- End Grid --> */}
       </div>
       {/* <!-- End Card Blog --> */}

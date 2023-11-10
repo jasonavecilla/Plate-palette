@@ -20,7 +20,7 @@ export default function Card({blog}) {
                 {blog.title}
               </h3>
               
-              <p className="mt-2 text-blue-600 sm:hidden">
+              <p className="mt-2 dark:text-white sm:hidden">
                 {blog.summary}
               </p>
     
@@ -31,10 +31,10 @@ export default function Card({blog}) {
                     <img className="h-[2.875rem] w-[2.875rem] rounded-full sm:border-2 sm:border-white object-cover" src={blog.avatar} alt={blog.author}/>
                   </div>
                   <div className="ml-2.5 sm:ml-4">
-                    <h4 className="font-semibold text-blue-600 sm:text-white">
+                    <h4 className="font-semibold dark:text-white sm:text-white">
                       {blog.author}
                     </h4>
-                    <p className="text-xs text-blue-500 sm:text-white/[.8]">
+                    <p className="text-xs dark:text-white sm:text-white/[.8]">
                      {blog.date}
                     </p>
                   </div>
