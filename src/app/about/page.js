@@ -1,6 +1,6 @@
-import React from 'react'
-import About from "../components/About"
-import Values from '../components/Values'
+import React from "react";
+import About from "../components/About";
+import Values from "../components/Values";
 
 export default function page() {
   return (
@@ -8,5 +8,5 @@ export default function page() {
       <About />
       <Values />
     </section>
-  )
+  );
 }

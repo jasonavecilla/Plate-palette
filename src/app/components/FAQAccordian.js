@@ -1,8 +1,6 @@
 import React from "react";
 import FAQItem from "./FAQItem";
 
-// credit to https://preline.co/examples/faq-sections.html
-
 const faqData = [
   {
     question: "Explore the Home Screen",

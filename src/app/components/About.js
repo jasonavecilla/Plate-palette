@@ -1,12 +1,9 @@
 "use client";
 
-
-
 export default function About() {
   return (
     <section className="mb-20">
       <main className="">
-        {/* Hero section */}
         <div className="relative">
           <div className="overflow-hidden">
             <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32">

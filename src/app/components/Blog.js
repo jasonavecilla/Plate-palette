@@ -12,7 +12,7 @@ const blogData = [
     author: "John Smith",
     title: "Marvelous macarons",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "Dive into the world of exquisite sweets with John's guide to crafting the perfect macarons. Learn the art of achieving that delightful crunch and smooth, flavorful fillings that will leave your taste buds dancing.",
   },
   {
     image: "https://source.unsplash.com/MytHEJlzdcM",
@@ -21,7 +21,7 @@ const blogData = [
     author: "Jane Doe",
     title: "Healthy fruit pancakes",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "Join Jane on a health-conscious culinary journey with her recipe for wholesome fruit pancakes. Discover a delightful balance of flavors and textures that make breakfast a nutritious and indulgent experience.",
   },
   {
     image: "https://source.unsplash.com/4LZPmKbgQiQ",
@@ -30,7 +30,7 @@ const blogData = [
     author: "Michael Jones",
     title: "Homemade Burgers",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "Uncover the secrets to creating the juiciest homemade burgers with Michael's foolproof recipe. From selecting the right blend of meats to mastering the grill, elevate your burger game to a whole new level.",
   },
   {
     image:
@@ -40,7 +40,7 @@ const blogData = [
     author: "Claire Fraser",
     title: "Fresh and Tasty Pho",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+      "Claire invites you to savor the fragrant aroma and rich flavors of her fresh pho recipe. Immerse yourself in the world of Vietnamese cuisine as you learn the art of preparing this comforting and nourishing dish.",
   },
 ];
 
@@ -50,7 +50,7 @@ function Blog() {
   ));
 
   return (
-    <>
+    <section>
       <div className="max-w-[70rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto my-10">
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">
@@ -66,7 +66,7 @@ function Blog() {
           {blogElements}
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

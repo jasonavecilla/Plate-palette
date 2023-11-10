@@ -8,7 +8,7 @@ export default function page() {
     <section>
       <BlogHero />
       <Blog />
-      <div className='-my-10'>
+      <div className="-my-10">
         <Newsletter />
       </div>
     </section>

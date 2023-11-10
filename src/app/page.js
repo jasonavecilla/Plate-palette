@@ -7,18 +7,16 @@ import FAQAccordian from "./components/FAQAccordian";
 import Newsletter from "./components/Newsletter";
 import RecipeGrid from "./components/RecipeGrid";
 import { useState } from "react";
-import testData from './testData'
-
+import testData from "./testData";
 
 export default function Home() {
-
   // const [recipes, setRecipes] = useState(null)
 
-  // test data 
-  const [recipes, setRecipes] = useState(testData.results)
+  // test data
+  const [recipes, setRecipes] = useState(testData.results);
 
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     import("preline");
@@ -27,8 +25,12 @@ export default function Home() {
   return (
     <>
       <SlideShow />
-      <SearchFilter setRecipes={setRecipes} setLoading={setLoading} setError={setError}/>
-      <RecipeGrid recipes={recipes} loading={loading} error={error}/>
+      <SearchFilter
+        setRecipes={setRecipes}
+        setLoading={setLoading}
+        setError={setError}
+      />
+      <RecipeGrid recipes={recipes} loading={loading} error={error} />
       <Blog />
       <Newsletter />
       <FAQAccordian />

@@ -1,37 +1,37 @@
 import React from "react";
 
 const values = [
-    {
-      name: "Quality Recipes",
-      description:
-        "Provide users with high-quality, tested, and diverse recipes that cater to various tastes and dietary preferences. Our recipes are carefully curated and tested to ensure they are easy to follow and result in delicious meals.",
-    },
-    {
-      name: "Ingredient Variety",
-      description:
-        "Offer a wide range of fresh and seasonal ingredients to inspire users' culinary creativity. From everyday staples to exotic specialty items, our app ensures you can find the perfect ingredients for your recipes.",
-    },
-    {
-      name: "User-Generated Content",
-      description:
-        "Encourage users to contribute their own recipes, cooking tips, and photos. Create a supportive community where home cooks and professional chefs can share their passion for food and help others discover new flavors and techniques.",
-    },
-    {
-      name: "Cooking Techniques",
-      description:
-        "Provide comprehensive guidance on cooking techniques, from the basics to advanced skills. Our app empowers users to sharpen their culinary skills and try new cooking methods with confidence.",
-    },
-    {
-      name: "Nutritional Information",
-      description:
-        "Offer detailed nutritional information for each recipe, including calorie counts, macronutrient breakdowns, and dietary labels. Help users make informed choices to meet their health and dietary goals.",
-    },
-    {
-      name: "Meal Planning",
-      description:
-        "Support users in planning their weekly meals. Our app allows users to create meal plans, generate shopping lists, and save favorite recipes for quick access. Streamline the meal preparation process and reduce food waste.",
-    },
-  ];
+  {
+    name: "Quality Recipes",
+    description:
+      "Provide users with high-quality, tested, and diverse recipes that cater to various tastes and dietary preferences. Our recipes are carefully curated and tested to ensure they are easy to follow and result in delicious meals.",
+  },
+  {
+    name: "Ingredient Variety",
+    description:
+      "Offer a wide range of fresh and seasonal ingredients to inspire users' culinary creativity. From everyday staples to exotic specialty items, our app ensures you can find the perfect ingredients for your recipes.",
+  },
+  {
+    name: "User-Generated Content",
+    description:
+      "Encourage users to contribute their own recipes, cooking tips, and photos. Create a supportive community where home cooks and professional chefs can share their passion for food and help others discover new flavors and techniques.",
+  },
+  {
+    name: "Cooking Techniques",
+    description:
+      "Provide comprehensive guidance on cooking techniques, from the basics to advanced skills. Our app empowers users to sharpen their culinary skills and try new cooking methods with confidence.",
+  },
+  {
+    name: "Nutritional Information",
+    description:
+      "Offer detailed nutritional information for each recipe, including calorie counts, macronutrient breakdowns, and dietary labels. Help users make informed choices to meet their health and dietary goals.",
+  },
+  {
+    name: "Meal Planning",
+    description:
+      "Support users in planning their weekly meals. Our app allows users to create meal plans, generate shopping lists, and save favorite recipes for quick access. Streamline the meal preparation process and reduce food waste.",
+  },
+];
 
 export default function Values() {
   return (

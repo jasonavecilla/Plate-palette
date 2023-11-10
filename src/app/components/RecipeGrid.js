@@ -97,7 +97,9 @@ const RecipeGrid = ({ recipes, loading, error }) => {
             ></i>
           </div>
           <div className="mt-[10px]">
-            <h3 className="font-medium mb-5 dark:text-white">{titles[index]}</h3>
+            <h3 className="font-medium mb-5 dark:text-white">
+              {titles[index]}
+            </h3>
             <div className="flex justify-between text-xs">
               <div className="flex items-center  dark:text-white">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
@@ -112,13 +114,15 @@ const RecipeGrid = ({ recipes, loading, error }) => {
 
   return (
     <section className="container mx-auto px-4 max-w-5xl my-20">
-      {loading ?  <Spinner /> 
-      : error ? 
-      <p className="text-center font-semibold">{error}</p> 
-      :
-      <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
-        {generateGridItems()}
-      </div>}
+      {loading ? (
+        <Spinner />
+      ) : error ? (
+        <p className="text-center font-semibold">{error}</p>
+      ) : (
+        <div className="grid grid-cols-2 gap-7 lg:gap-10 md:grid-cols-3">
+          {generateGridItems()}
+        </div>
+      )}
     </section>
   );
 };
