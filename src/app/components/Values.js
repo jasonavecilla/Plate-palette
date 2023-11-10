@@ -37,7 +37,7 @@ export default function Values() {
   return (
     <section>
       {/* Values section */}
-      <div className="mx-auto mt-32 max-w-5xl px-6 sm:mt-40 lg:px-8 mb-10">
+      <div className="mx-auto mt-32 max-w-5xl px-6 sm:mt-40 lg:px-8 mb-60">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-3xl">
             Our values
