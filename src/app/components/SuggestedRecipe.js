@@ -87,7 +87,7 @@ export default function SuggestedRecipe({ recipes }) {
   };
 
   return (
-    <section className="container mx-auto px-6 max-w-7xl my-20">
+    <section className="container mx-auto px-6 max-w-7xl my-20 mb-40">
       <h1 className="text-center font-bold text-3xl">
         Discover Culinary Inspiration
       </h1>
