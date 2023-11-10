@@ -16,7 +16,6 @@ function RecipeCard({ recipe }) {
   return (
     <>
       <div className="relative flex flex-col hover:cursor-pointer ">
-        {/* image div */}
         <div
           className="h-[120px] lg:h-44"
           data-hs-overlay={`#hs-scroll-inside-body-modal-${recipe.slug}`}

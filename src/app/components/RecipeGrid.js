@@ -98,10 +98,10 @@ const RecipeGrid = ({ recipes, loading, error }) => {
           </div>
           <div className="mt-[10px]">
             <h3 className="font-medium mb-5 dark:text-white">{titles[index]}</h3>
-            <div className="flex justify-between text-xs text-dark-600">
+            <div className="flex justify-between text-xs">
               <div className="flex items-center  dark:text-white">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
-                <span>{ratings[index]}</span>
+                <span className="dark:text-white">{ratings[index]}</span>
               </div>
             </div>
           </div>

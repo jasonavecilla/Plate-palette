@@ -69,7 +69,6 @@ export default function RecipeImage() {
   return (
     <section className="container mx-auto px-5 mt-10   ">
       <div className=" pl-0 md:pl-10 flex-col md:flex-row md:gap-x-10 flex  ">
-        {/* Image */}
         <div className=" xs:w-full lg:w-1/2  md:w-1/2 flex flex-shrink-0">
           <img
             src={mockData2[0].image}
@@ -77,18 +76,13 @@ export default function RecipeImage() {
             alt="spaghetti"
           />
         </div>
-
-        {/* Text */}
         <div className="flex flex-col gap-y-8 pt-10 p-8 md:p-0 w-full h-full max-w-lg ">
-          {/* Title Name */}
           <div>
             <p className="font-bold text-xl">{mockData2[0].name}</p>
           </div>
-          {/* Description */}
           <div className=" banner ">
             <p className="font-base text-md  ">{mockData2[0].description}</p>
           </div>
-          {/* Icons */}
           <div className="flex md:flex-row md:gap-x-24 md:pl-5 md:divide-x justify-center items-center p-5 max-w-lg">
             <div className="flex flex-col justify-center items-center">
               <svg
@@ -173,7 +167,6 @@ export default function RecipeImage() {
               </div>
             </div>
           </div>
-          {/* Author */}
           <div>
             <p className="font-sans-serif text-md font-md md:pt-6 md:pb-3">
               Created by {mockData2[0].author}

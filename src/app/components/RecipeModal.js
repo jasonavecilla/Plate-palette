@@ -18,31 +18,32 @@ function RecipeModal({ recipe, rating, numReviews }) {
       >
         <div className="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto h-[calc(100%-3.5rem)]">
           <div className="max-h-full overflow-hidden flex flex-col bg-white border shadow-sm rounded-xl ">
-            {/* close button */}
             <div className="flex justify-end items-center py-3 px-4 border-b">
-              <button 
-                type="button" 
-                className="flex justify-center items-center w-7 h-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"  data-hs-overlay={`#hs-scroll-inside-body-modal-${recipe.slug}`}>
+              <button
+                type="button"
+                className="flex justify-center items-center w-7 h-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+                data-hs-overlay={`#hs-scroll-inside-body-modal-${recipe.slug}`}
+              >
                 <span className="sr-only">Close</span>
-                <svg 
-                  className="flex-shrink-0 w-4 h-4" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round">
-                  <path d="M18 6 6 18"/>
-                  <path d="m6 6 12 12"/>
+                <svg
+                  className="flex-shrink-0 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 6 6 18" />
+                  <path d="m6 6 12 12" />
                 </svg>
               </button>
             </div>
             <div className="p-4 overflow-y-auto">
               <div>
-                {/* image */}
                 <img
                   src={recipe.thumbnail_url}
                   className="object-cover w-full h-44 mb-2 rounded-lg"
@@ -50,35 +51,37 @@ function RecipeModal({ recipe, rating, numReviews }) {
 
                 <div className="sm:grid sm:grid-cols-3 ">
                   <div className="sm:col-span-2">
-                    {/* title */}
                     <h3 className="text-2xl font-semibold text-gray-800  mb-1 ">
                       {recipe.name}
                     </h3>
                   </div>
 
-                  {/* category */}
                   <div className="flex flex-wrap gap-1 mb-2 sm:row-start-2 sm:col-span-3 ">
                     {categoryElements}
                   </div>
 
                   <div className="flex gap-2 sm:col-start-3 mb-2 justify-self-end">
-                    {/* time */}
                     <div className="flex flex-col text-sm justify-center items-center">
-                    <svg 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      className="icon icon-tabler icon-tabler-clock" 
-                      width="30" 
-                      height="30" 
-                      viewBox="0 0 24 24" 
-                      strokeWidth="2" 
-                      stroke="#000000" 
-                      fill="none" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                      <path d="M12 7v5l3 3"></path>
-                    </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="icon icon-tabler icon-tabler-clock"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        strokeWidth="2"
+                        stroke="#000000"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                        <path d="M12 7v5l3 3"></path>
+                      </svg>
                       <p className="text-gray-800">
                         {recipe.total_time_minutes
                           ? recipe.total_time_minutes + " mins"
@@ -88,25 +91,27 @@ function RecipeModal({ recipe, rating, numReviews }) {
 
                     {/* num serves */}
                     <div className="flex flex-col text-sm justify-center items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="icon icon-tabler icon-tabler-users"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="#000000"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                      <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                      <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                      <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                    </svg>
-                      <p className="text-gray-800">Serves {recipe.num_servings}</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="icon icon-tabler icon-tabler-users"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="#000000"
+                        fill="none"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                      </svg>
+                      <p className="text-gray-800">
+                        Serves {recipe.num_servings}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -120,7 +125,6 @@ function RecipeModal({ recipe, rating, numReviews }) {
                         : " anonymous"}
                     </p>
 
-                    {/* star */}
                     <div className="flex  text-xs">
                       <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
                       <p className="text-gray-800">
@@ -130,7 +134,6 @@ function RecipeModal({ recipe, rating, numReviews }) {
                   </div>
                 </div>
 
-                {/* nutrition table */}
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mt-4">
                     Nutrition
@@ -138,7 +141,6 @@ function RecipeModal({ recipe, rating, numReviews }) {
                   <NutritionTable nutrition={recipe.nutrition} />
                 </div>
 
-                {/* ingredients */}
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mt-4">
                     Ingredients
@@ -152,7 +154,6 @@ function RecipeModal({ recipe, rating, numReviews }) {
                   </ul>
                 </div>
 
-                {/* procedure */}
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mt-4">
                     Procedure
@@ -165,7 +166,6 @@ function RecipeModal({ recipe, rating, numReviews }) {
                     ))}
                   </ul>
                   <div>
-                    {/* video link */}
                     <div className="relative mt-5 flex justify-center items-center ">
                       <a
                         href={recipe.original_video_url}

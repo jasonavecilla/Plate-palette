@@ -44,7 +44,7 @@ export default function SlideShow() {
         >
           {data.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div className=" mix-blend-darken bg-opacity-40 bg-gray-700 ">
+              <div className=" mix-blend-darken bg-opacity-40 bg-gray-700">
                 <div className="w-full h-full absolute justify-center items-center md:items-center md:justify-center text-white flex flex-col mx-auto  ">
                   <p className=" text-center  text-5xl md:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,10)] outline-1 font-bold font-quicksand mb-1 md:mb-6 max-w-xxl uppercase banner md:p-0">
                     Unleash Your Inner Chef
