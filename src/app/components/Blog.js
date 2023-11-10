@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 
-// credit blog section from https://preline.co/examples/blog-sections.html
 
 const blogData = [
   {
