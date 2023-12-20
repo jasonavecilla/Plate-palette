@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+
 
 export default function NutritionRecipeMain() {
-  const { mode } = useContext(ThemeContext);
+
   return (
     <section className="flex flex-col">
       <div className="font-bold text-xl mb-7 uppercase">Nutrition</div>
       <div
-        className={`flex ${
-          mode === "dark" ? "bg-dark-500" : "bg-gray-200"
-        } p-2`}
+        className="flex
+           bg-gray-200
+        p-2"
       >
         <div className="w-1/2">
           <span>Cholesterol</span>
@@ -27,9 +27,9 @@ export default function NutritionRecipeMain() {
         </div>
       </div>
       <div
-        className={`flex ${
-          mode === "dark" ? "bg-dark-500" : "bg-gray-200"
-        } p-2`}
+        className="flex
+           bg-gray-200
+        p-2"
       >
         <div className="w-1/2">
           <span>Sodium</span>
@@ -47,9 +47,9 @@ export default function NutritionRecipeMain() {
         </div>
       </div>
       <div
-        className={`flex ${
-          mode === "dark" ? "bg-dark-500" : "bg-gray-200"
-        } p-2`}
+        className="flex
+           bg-gray-200
+        p-2"
       >
         <div className="w-1/2 ">
           <span>Fat</span>

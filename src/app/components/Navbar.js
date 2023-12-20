@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { ThemeContext } from "../context/ThemeContext";
-import DarkMode from "./DarkMode";
 import logo from "../../../public/assets/logo.svg";
 import navbarLogo_dark from "../../../public/assets/navbarLogo_dark.svg";
 import menu from "../../../public/assets/menu.svg";
@@ -12,7 +10,7 @@ import menuClose from "../../../public/assets/menu-close.svg";
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   const [scrollingDown, setScrollingDown] = useState(false);
-  const { mode } = useContext(ThemeContext);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +35,7 @@ export default function NavBar() {
           <a href="/">
             <div className="flex flex-wrap drop-shadow-xl">
               <Image
-                src={mode === "dark" ? navbarLogo_dark : logo}
+                src={logo}
                 alt="Logo"
               />
             </div>
@@ -78,7 +76,6 @@ export default function NavBar() {
               <a href="/contact">CONTACT US</a>
             </li>
             <div className="flex space-x-4 mt-2">
-              <DarkMode />
             </div>
           </ul>
         </div>

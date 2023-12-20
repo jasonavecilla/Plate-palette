@@ -10,10 +10,10 @@ export default function BlogHero() {
     >
       <div className="container h-[70vh] w-[80%] mx-auto  flex items-center justify-center lg:justify-start">
         <div className="bg-white w-fit p-5 rounded ring-8 max-w-prose">
-          <h1 className="text-xl text-black dark:text-white md:text-3xl font-bold font-quicksand mb-3">
+          <h1 className="text-xl text-black md:text-3xl font-bold font-quicksand mb-3">
             Spring Rolls
           </h1>
-          <p className="text-sm md:text-lg mb-5 text-black dark:text-white">
+          <p className="text-sm md:text-lg mb-5 text-black">
             Spring rolls, those delightful, translucent bites, have captured
             taste buds worldwide for centuries. Their rich history spans
             cultures and offers diverse flavors. Whether you love Asian cuisine
@@ -29,15 +29,15 @@ export default function BlogHero() {
                 }}
               ></div>
               <div className="text-sm md:text">
-                <p className="text-black dark:text-white">Mary Dickson</p>
-                <p className="text-black dark:text-white">October 31, 2023</p>
+                <p className="text-black ">Mary Dickson</p>
+                <p className="text-black ">October 31, 2023</p>
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full text-black dark:text-white bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer">
+              <div className="w-10 h-10 rounded-full text-black  bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer">
                 <i className="fa-solid fa-share-nodes"></i>
               </div>
-              <div className="w-10 h-10 rounded-full text-black dark:text-white bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer">
+              <div className="w-10 h-10 rounded-full text-black  bg-slate-200 flex items-center justify-center hover:bg-slate-300 hover:cursor-pointer">
                 <i className="fa-solid fa-bookmark"></i>
               </div>
             </div>

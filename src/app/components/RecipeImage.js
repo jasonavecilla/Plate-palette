@@ -30,11 +30,11 @@ const mockData2 = [
 ];
 
 import Image from "next/image";
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+
+
 
 export default function RecipeImage() {
-  const { mode } = useContext(ThemeContext);
+
   const mockData2 = [
     {
       id: "n1",
@@ -92,7 +92,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
+                stroke="#FFFFFF"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -121,7 +121,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
+                stroke="#FFFFFF"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -148,7 +148,7 @@ export default function RecipeImage() {
                 height="30"
                 viewBox="0 0 24 24"
                 strokeWidth="1.5"
-                stroke={mode === "dark" ? "#FFFFFF" : "#000000"}
+                stroke="#FFFFFF"
                 fill="none"
                 strokeLinecap="round"
                 strokeLinejoin="round"

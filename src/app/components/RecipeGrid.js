@@ -90,20 +90,20 @@ const RecipeGrid = ({ recipes, loading, error }) => {
           <div className="img-overlay h-[100px] lg:h-40 w-full absolute top-0 left-0 rounded-xl"></div>
           <div className="p-3 absolute top-0 right-0">
             <i
-              className={`fa-solid fa-heart text-white hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${
+              className={`fa-solid fa-heart text-black hover:text-red-500 hover:cursor-pointer duration-200 ease-in-out ${
                 heartClicks[index] ? "text-red-500" : ""
               }`}
               onClick={() => handleHeartClick(index)}
             ></i>
           </div>
           <div className="mt-[10px]">
-            <h3 className="font-medium mb-5 dark:text-white">
+            <h3 className="font-medium mb-5 text-black">
               {titles[index]}
             </h3>
             <div className="flex justify-between text-xs">
-              <div className="flex items-center  dark:text-white">
+              <div className="flex items-center  text-black">
                 <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
-                <span className="dark:text-white">{ratings[index]}</span>
+                <span className="text-black">{ratings[index]}</span>
               </div>
             </div>
           </div>

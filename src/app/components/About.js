@@ -9,10 +9,10 @@ export default function About() {
             <div className="mx-auto max-w-5xl px-6 pb-32 pt-36 sm:pt-60 lg:px-4 lg:pt-32">
               <div className="mx-auto max-w-xl gap-x-10 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="w-full max-w-lg lg:shrink-0 xl:max-w-lg">
-                  <h1 className="text-2xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-4xl">
+                  <h1 className="text-2xl font-bold tracking-tight text-yellowgreen-600 text-blacksm:text-4xl">
                     We’re changing the way people prepare food.
                   </h1>
-                  <p className="relative mt-6 text-lg leading-8 dark:text-white sm:max-w-md lg:max-w-none">
+                  <p className="relative mt-6 text-lg leading-8 text-black sm:max-w-md lg:max-w-none">
                     Our mission is to empower people to explore, create, and
                     enjoy delicious, homemade meals through our recipe app. We
                     are dedicated to providing a user-friendly platform that

@@ -20,10 +20,10 @@ export default function Contact() {
           >
             <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
               <div className="mb-10">
-                <h2 className="text-2xl font-bold tracking-tight dark:text-white">
+                <h2 className="text-2xl font-bold tracking-tight text-black">
                   Feel free to reach out
                 </h2>
-                <p className="mt-6 text-md leading-8 dark:text-white italic">
+                <p className="mt-6 text-md leading-8 text-black italic">
                   Do not hesitate to contact us with any questions or feedback.
                   We are here to assist you with anything you need. Your input
                   matters to us.
@@ -33,7 +33,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="first-name"
-                    className="block text-sm font-semibold leading-6 dark:text-white"
+                    className="block text-sm font-semibold leading-6 text-black"
                   >
                     First name
                   </label>
@@ -50,7 +50,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="last-name"
-                    className="block text-sm font-semibold leading-6 dark:text-white"
+                    className="block text-sm font-semibold leading-6 text-black"
                   >
                     Last name
                   </label>
@@ -67,7 +67,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="email"
-                    className="block text-sm font-semibold leading-6 dark:text-white"
+                    className="block text-sm font-semibold leading-6 text-black"
                   >
                     Email
                   </label>
@@ -84,7 +84,7 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="phone-number"
-                    className="block text-sm font-semibold leading-6 dark:text-white"
+                    className="block text-sm font-semibold leading-6 text-black"
                   >
                     Phone number
                   </label>

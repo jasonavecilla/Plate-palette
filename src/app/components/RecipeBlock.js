@@ -70,7 +70,7 @@ function CheckboxList({ instructions }) {
                       onChange={() => handleCheckboxChange(item.id)}
                     />
                   </label>
-                  <div className="dark:text-white">
+                  <div className="text-black">
                     <div>
                       <h1 className="text-md font-medium mb-2">
                         STEP {index + 1}
@@ -95,7 +95,7 @@ function CheckboxList({ instructions }) {
             </h1>
             <ul className="text-base md:text-md">
               {mockData[0].ingredients.map((ingredient, index) => (
-                <li className="dark:text-white font-light" key={index}>
+                <li className="text-black font-light" key={index}>
                   {ingredient}
                   <hr className="h-0.5 my-5 pl-20 bg-gray-300 border-0"></hr>
                 </li>

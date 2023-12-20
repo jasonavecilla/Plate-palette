@@ -4,19 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark {
-  background-color: rgb(49, 47, 47);
-  color: white;
-}
-
-.light {
-  background-color: #fff;
-  color: rgb(10, 10, 10);
-}
-
-/* .theme {
-  transition: 1s all ease;
-} */
 
 
 @layer base {

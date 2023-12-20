@@ -39,10 +39,10 @@ export default function Values() {
       {/* Values section */}
       <div className="mx-auto mt-32 max-w-5xl px-6 sm:mt-40 lg:px-8 mb-40">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-yellowgreen-600 dark:text-white sm:text-3xl">
+          <h2 className="text-3xl font-bold tracking-tight text-yellowgreen-600 text-black sm:text-3xl">
             Our values
           </h2>
-          <p className="mt-6 text-lg leading-8 dark:text-white">
+          <p className="mt-6 text-lg leading-8 text-black">
             From everyday staples to exotic specialties, we offer a wide array
             of fresh, seasonal ingredients, inspiring your culinary creativity
             and guaranteeing you find the perfect components for your dishes.
@@ -54,7 +54,7 @@ export default function Values() {
               <dt className="font-semibold text-yellowgreen-600">
                 {value.name}
               </dt>
-              <dd className="mt-1 dark:text-white">{value.description}</dd>
+              <dd className="mt-1 text-black">{value.description}</dd>
             </div>
           ))}
         </dl>

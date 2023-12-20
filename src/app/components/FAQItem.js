@@ -8,12 +8,12 @@ export default function FAQItem({ faq }) {
         id="hs-basic-with-title-and-arrow-stretched-heading-two"
       >
         <button
-          className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left transition dark:text-black hover:text-yellowgreen-500"
+          className="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-left transition text-yellowgreen-500"
           aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
         >
           {faq.question}
           <svg
-            className="hs-accordion-active:hidden block w-3 h-3 dark:text-black group-hover:text-blue-500"
+            className="hs-accordion-active:hidden block w-3 h-3 text-yellowgreen-500 group-hover:text-blue-500"
             width="16"
             height="16"
             viewBox="0 0 16 16"
@@ -48,7 +48,7 @@ export default function FAQItem({ faq }) {
           className="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
           aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
         >
-          <p className="dark:text-black">{faq.answer}</p>
+          <p className="text-black">{faq.answer}</p>
         </div>
       </div>
     </>

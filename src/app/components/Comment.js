@@ -34,15 +34,15 @@ export default function Comment() {
   return (
     <section className="my-10">
       <h1 className="text-center font-bold text-3xl">Join the Conversation</h1>
-      <div className="dark:bg-gray-900 py-8 lg:py-16 antialiased">
+      <div className=" py-8 lg:py-16 antialiased">
         <div className="max-w-2xl mx-auto px-4">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-lg lg:text-2xl font-bold dark:text-white md:pl-0 pl-4">
+            <h2 className="text-lg lg:text-2xl font-bold text-black md:pl-0 pl-4">
               Discussion ({commentData.length})
             </h2>
           </div>
           <form className="mb-6 md:px-0 px-4" id="form">
-            <div className="p-4 flex items-center justify-center mb-4 rounded-lg rounded-t-lg border border-gray-200 dark:border-gray-700">
+            <div className="p-4 flex items-center justify-center mb-4 rounded-lg rounded-t-lg border border-gray-700">
               <textarea
                 id="comment"
                 rows="6"
@@ -61,11 +61,11 @@ export default function Comment() {
           {commentData.map((comment) => (
             <article
               key={comment.id}
-              className="p-6 text-base rounded-lg dark:bg-gray-900"
+              className="p-6 text-base rounded-lg "
             >
               <footer className="flex justify-between items-center mb-2">
                 <div className="flex items-center">
-                  <p className="inline-flex items-center mr-3 text-sm dark:text-white font-semibold">
+                  <p className="inline-flex items-center mr-3 text-sm text-black font-semibold">
                     <img
                       className="mr-2 w-7 h-7 rounded-full"
                       src={comment.imgUrls}
@@ -73,10 +73,10 @@ export default function Comment() {
                     />
                     {comment.name}
                   </p>
-                  <p className="text-sm dark:text-white">{comment.dateTime}</p>
+                  <p className="text-sm text-black">{comment.dateTime}</p>
                 </div>
               </footer>
-              <p className="dark:text-white">{comment.content}</p>
+              <p className="text-black">{comment.content}</p>
 
               <div className="flex items-center mt-4 space-x-4">
                 <button

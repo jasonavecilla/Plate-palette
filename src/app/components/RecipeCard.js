@@ -1,17 +1,16 @@
 import React, { useContext } from "react";
 import { useState } from "react";
 import RecipeModal from "./RecipeModal";
-import { ThemeContext } from "../context/ThemeContext";
+
 
 function RecipeCard({ recipe }) {
-  const { mode } = useContext(ThemeContext);
+
   const [isFav, setIsFav] = useState(false);
 
   const rating = (recipe.user_ratings.score * 5).toFixed(1);
   const numReviews =
     recipe.user_ratings.count_positive + recipe.user_ratings.count_negative;
 
-  const textColorClass = mode === "dark" ? "text-white" : "text-dark-400";
 
   return (
     <>
@@ -39,14 +38,14 @@ function RecipeCard({ recipe }) {
           data-hs-overlay={`#hs-scroll-inside-body-modal-${recipe.slug}`}
         >
           <h3 className="font-medium mb-5">{recipe.name}</h3>
-          <div className={`flex justify-between text-xs ${textColorClass}`}>
+          <div className="flex justify-between text-xs">
             <div className="flex items-center">
               <i className="fa-solid fa-star text-yellow-500 mr-[6px]"></i>
               <span className="">
                 {rating}({numReviews})
               </span>
             </div>
-            <span className={`by ${textColorClass}`}>
+            <span className="">
               by {recipe.credits[0].name ? recipe.credits[0].name : "anonymous"}
             </span>
           </div>
