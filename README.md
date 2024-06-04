@@ -61,7 +61,7 @@
 
 <h2 id="developers">III. Developers</h2>
 <a href="https://github.com/johncarlolipa"><img src="https://img.shields.io/badge/johncarlolipa-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a>
-<a href="https://github.com/ErickaConcepcion"><img src="https://img.shields.io/badge/erickaconcepcion-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><a href="https://github.com/jessabc"><img src="https://img.shields.io/badge/jessabc-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><a href="https://github.com/GabriellaN-02"><img src="https://img.shields.io/badge/gabriellaneri-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><img src="https://img.shields.io/badge/Jasonavecilla-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a>
+<a href="https://github.com/ErickaConcepcion"><img src="https://img.shields.io/badge/erickaconcepcion-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><a href="https://github.com/jessabc"><img src="https://img.shields.io/badge/jessabc-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><a href="https://github.com/GabriellaN-02"><img src="https://img.shields.io/badge/gabriellaneri-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a><a href="https://github.com/Jasonavecilla-"><img src="https://img.shields.io/badge/Jasonavecilla-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"></a>
 
 <h2 id="project-link">IV. Project Link</h2>
 
