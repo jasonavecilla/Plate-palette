@@ -10,7 +10,13 @@
 <h2 id="about">I. About the Project</h2>
 <p>The Plate Palette is a dynamic and user-friendly web application that's been developed as part of our project during our journey in Chingu Tier 2: Frontend Framework & API Usage. This project showcases our collective efforts, learning, and commitment to building a feature-rich application using a variety of cutting-edge technologies.</p>
 
-## Key Features:
+![App Screenshot](https://scontent.fmnl33-1.fna.fbcdn.net/v/t1.15752-9/441895007_1275395620108173_2405092575473472265_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF1GVBy8GFq1BwkYAVKgiyA4-C8br0xQdDj4LxuvTFB0Ca3QTA-xOElWADmrvU-tpl2OBMiCfO-bdVUIAxSBqKX&_nc_ohc=XuSUWH590GUQ7kNvgHYBLy0&_nc_ht=scontent.fmnl33-1.fna&oh=03_Q7cD1QGpf7nA8qx2Gg2D8O3-8aQbyfpRZM80E4l3HXYf_kbIrQ&oe=6686AED9)
+![App Screenshot](https://scontent.fmnl33-2.fna.fbcdn.net/v/t1.15752-9/441281244_867216851897256_7214148216268462516_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHdU9wL3Jb10mrdorpjsnfthsfjjGBT2eWGx-OMYFPZ5Qq0fvH_uRx2D43Lz_4CvkOv68B3e8vr-RT8FZpOh6XH&_nc_ohc=tPQvkfmPzBgQ7kNvgEgvv7C&_nc_ht=scontent.fmnl33-2.fna&oh=03_Q7cD1QHKGCtoMXi75lw3czsWGPhq1aRRknlM926a3FUi8x9Adg&oe=6686A7B0)
+![App Screenshot](https://scontent.fmnl33-5.fna.fbcdn.net/v/t1.15752-9/436710775_330574976583861_1166915312943615864_n.png?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEChZX6IWWQhVgRX-_XI4KxDBgL4Q4r-lQMGAvhDiv6VIhzqpzgqjJ05UZfPG380UALFQrUAYiNrEO7KzEiVc9G&_nc_ohc=09RnoXqEYIAQ7kNvgHRUgxh&_nc_ht=scontent.fmnl33-5.fna&oh=03_Q7cD1QFLSOmZROKnHkB6kyQ35jFPEov1ZfNIbM3VgwSSiH704Q&oe=6686CD0E)
+![App Screenshot](https://scontent.fmnl33-2.fna.fbcdn.net/v/t1.15752-9/436561651_759367279718055_6000079973985894851_n.png?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeENNhe2-yGxun9v0KFkI6s8ONhdvNyLf9U42F283It_1ffkbeqcQZydmsiocgWKC_BbEhCnFGJZuhU5s34Uu6vE&_nc_ohc=3h9mlg0f56oQ7kNvgFsml2Q&_nc_ht=scontent.fmnl33-2.fna&oh=03_Q7cD1QFfpXwkAWhnbg-VoJ4uufk3zZNWidKTEAEOjXuET2w_5A&oe=6686B284)
+![App Screenshot](https://scontent.fmnl33-2.fna.fbcdn.net/v/t1.15752-9/436446888_987494296238962_7306991741036431794_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHgNmgj4tGdPECaGStxyto6kELSgl8CVwiQQtKCXwJXCHY2qYpb0XGH-C7MP-dv8dY--F-j9ksiiP-JVjESROAn&_nc_ohc=LUz2r2TJyCwQ7kNvgGVs0ng&_nc_ht=scontent.fmnl33-2.fna&oh=03_Q7cD1QGfOshXF6iUQ8VzodQr-qYiuk7XBvo4mXDWOsSyVfducQ&oe=6686BAAD)
+![App Screenshot](https://scontent.fmnl33-3.fna.fbcdn.net/v/t1.15752-9/441995875_970489834720402_2120338008557332941_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH6yemCynJhH_jU1vu_6eiJvZ8d9Jt6Dse9nx30m3oOx1TjADRUqOrQBZAmhwnVFWX4RrN4vTCRIOosvadKzRgM&_nc_ohc=auMx-k_iLH8Q7kNvgGVb6Fl&_nc_ht=scontent.fmnl33-3.fna&oh=03_Q7cD1QFu63EJNsjGt6B4apYoDJRzTWd7TOwguJGlcj_prL5y6A&oe=6686B1F0)
+
 
 ### Landing Page
 
